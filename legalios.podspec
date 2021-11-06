@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "legalios"
-  spec.version      = "0.0.11"
+  spec.version      = "0.0.12"
   spec.summary      = "Salary, Health, Social, Taxing Properties for years 2011-2022"
 
   # This description is used to generate tags and improve search results.
@@ -88,7 +88,7 @@ Pod::Spec.new do |spec|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/mzdyhrave/payrollsw.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/mzdyhrave/legaliossw.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
