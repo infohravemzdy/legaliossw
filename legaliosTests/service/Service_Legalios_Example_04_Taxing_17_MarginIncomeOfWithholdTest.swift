@@ -8,9 +8,23 @@ import Nimble
 
 @testable import legalios
 
-class Service_Legalios_Example_04_Taxing_16_MarginIncomeOfWithholdTest: QuickSpec {
+class Service_Legalios_Example_04_Taxing_17_MarginIncomeOfWithholdTest: QuickSpec {
     override func spec() {
         let test_examples: [(title: String, tests: [(title: String, year: Int16, month: Int16, expYear: Int16, expMonth: Int16, expected: Int32)])] = [
+            ("2010", [
+                ( "2010-1", 2010, 1, 2010, 1, 5000 ),
+                ( "2010-2", 2010, 2, 2010, 2, 5000 ),
+                ( "2010-3", 2010, 3, 2010, 3, 5000 ),
+                ( "2010-4", 2010, 4, 2010, 4, 5000 ),
+                ( "2010-5", 2010, 5, 2010, 5, 5000 ),
+                ( "2010-6", 2010, 6, 2010, 6, 5000 ),
+                ( "2010-7", 2010, 7, 2010, 7, 5000 ),
+                ( "2010-8", 2010, 8, 2010, 8, 5000 ),
+                ( "2010-9", 2010, 9, 2010, 9, 5000 ),
+                ( "2010-10", 2010, 10, 2010, 10, 5000 ),
+                ( "2010-11", 2010, 11, 2010, 11, 5000 ),
+                ( "2010-12", 2010, 12, 2010, 12, 5000 ),
+            ]),
             ("2011", [
                 ( "2011-1", 2011, 1, 2011, 1, 5000 ),
                 ( "2011-2", 2011, 2, 2011, 2, 5000 ),
@@ -181,7 +195,7 @@ class Service_Legalios_Example_04_Taxing_16_MarginIncomeOfWithholdTest: QuickSpe
             ]),
         ]
 #if __PROTOKOL_TEST_FILE__
-        logTestIntExamples(fileName: "04_Taxing_16_MarginIncomeOfWithhold.txt", tx: test_examples)
+        logTestIntExamples(fileName: "04_Taxing_17_MarginIncomeOfWithhold.txt", tx: test_examples)
 #endif
 
         test_examples.forEach { (title: String, tests: [(title: String, year: Int16, month: Int16, expYear: Int16, expMonth: Int16, expected: Int32)]) in

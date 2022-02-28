@@ -8,9 +8,23 @@ import Nimble
 
 @testable import legalios
 
-class Service_Legalios_Example_04_Taxing_11_FactorSolitaryTest: QuickSpec {
+class Service_Legalios_Example_04_Taxing_11_FactorSolidaryTest: QuickSpec {
     override func spec() {
         let test_examples: [(title: String, tests: [(title: String, year: Int16, month: Int16, expYear: Int16, expMonth: Int16, expected: Double)])] = [
+            ("2010", [
+                ( "2010-1", 2010, 1, 2010, 1, 0.00 ),
+                ( "2010-2", 2010, 2, 2010, 2, 0.00 ),
+                ( "2010-3", 2010, 3, 2010, 3, 0.00 ),
+                ( "2010-4", 2010, 4, 2010, 4, 0.00 ),
+                ( "2010-5", 2010, 5, 2010, 5, 0.00 ),
+                ( "2010-6", 2010, 6, 2010, 6, 0.00 ),
+                ( "2010-7", 2010, 7, 2010, 7, 0.00 ),
+                ( "2010-8", 2010, 8, 2010, 8, 0.00 ),
+                ( "2010-9", 2010, 9, 2010, 9, 0.00 ),
+                ( "2010-10", 2010, 10, 2010, 10, 0.00 ),
+                ( "2010-11", 2010, 11, 2010, 11, 0.00 ),
+                ( "2010-12", 2010, 12, 2010, 12, 0.00 ),
+            ]),
             ("2011", [
                 ( "2011-1", 2011, 1, 2011, 1, 0.0 ),
                 ( "2011-2", 2011, 2, 2011, 2, 0.0 ),
@@ -181,7 +195,7 @@ class Service_Legalios_Example_04_Taxing_11_FactorSolitaryTest: QuickSpec {
             ]),
         ]
 #if __PROTOKOL_TEST_FILE__
-        logTestDecExamples(fileName: "04_Taxing_11_FactorSolitary.txt", tx: test_examples)
+        logTestDecExamples(fileName: "04_Taxing_11_FactorSolidary.txt", tx: test_examples)
 #endif
 
         test_examples.forEach { (title: String, tests: [(title: String, year: Int16, month: Int16, expYear: Int16, expMonth: Int16, expected: Double)]) in
@@ -220,7 +234,7 @@ class Service_Legalios_Example_04_Taxing_11_FactorSolitaryTest: QuickSpec {
                         }
                         it("GetProps should return value = \(expected)") {
                             let expDecimal = Decimal(expected)
-                            expect(props?.factorSolitary).to(equal(expDecimal))
+                            expect(props?.factorSolidary).to(equal(expDecimal))
                         }
                     }
                 }

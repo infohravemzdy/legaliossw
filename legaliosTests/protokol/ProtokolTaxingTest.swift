@@ -13,7 +13,7 @@ class ProtokolTaxingTest: QuickSpec {
     override func spec() {
         describe("GetProps_ShouldExport_AllowancePayer") {
             let test_examples: [(title: String, minYear: Int16, maxYear: Int16)] = [
-                ("2011-2022", 2011, 2022),
+                ("2010-2022", 2010, 2022),
             ]
             test_examples.forEach { (title: String, minYear: Int16, maxYear: Int16) in
                 context("tests for years \(title)") {
@@ -33,7 +33,7 @@ class ProtokolTaxingTest: QuickSpec {
         }
         describe("GetProps_ShouldExport_AllowanceDisab1st") {
             let test_examples: [(title: String, minYear: Int16, maxYear: Int16)] = [
-                ("2011-2022", 2011, 2022),
+                ("2010-2022", 2010, 2022),
             ]
             test_examples.forEach { (title: String, minYear: Int16, maxYear: Int16) in
                 context("tests for years \(title)") {
@@ -53,7 +53,7 @@ class ProtokolTaxingTest: QuickSpec {
         }
         describe("GetProps_ShouldExport_AllowanceDisab2nd") {
             let test_examples: [(title: String, minYear: Int16, maxYear: Int16)] = [
-                ("2011-2022", 2011, 2022),
+                ("2010-2022", 2010, 2022),
             ]
             test_examples.forEach { (title: String, minYear: Int16, maxYear: Int16) in
                 context("tests for years \(title)") {
@@ -73,7 +73,7 @@ class ProtokolTaxingTest: QuickSpec {
         }
         describe("GetProps_ShouldExport_AllowanceDisab3rd") {
             let test_examples: [(title: String, minYear: Int16, maxYear: Int16)] = [
-                ("2011-2022", 2011, 2022),
+                ("2010-2022", 2010, 2022),
             ]
             test_examples.forEach { (title: String, minYear: Int16, maxYear: Int16) in
                 context("tests for years \(title)") {
@@ -93,7 +93,7 @@ class ProtokolTaxingTest: QuickSpec {
         }
         describe("GetProps_ShouldExport_AllowanceStudy") {
             let test_examples: [(title: String, minYear: Int16, maxYear: Int16)] = [
-                ("2011-2022", 2011, 2022),
+                ("2010-2022", 2010, 2022),
             ]
             test_examples.forEach { (title: String, minYear: Int16, maxYear: Int16) in
                 context("tests for years \(title)") {
@@ -113,7 +113,7 @@ class ProtokolTaxingTest: QuickSpec {
         }
         describe("GetProps_ShouldExport_AllowanceChild1st") {
             let test_examples: [(title: String, minYear: Int16, maxYear: Int16)] = [
-                ("2011-2022", 2011, 2022),
+                ("2010-2022", 2010, 2022),
             ]
             test_examples.forEach { (title: String, minYear: Int16, maxYear: Int16) in
                 context("tests for years \(title)") {
@@ -133,7 +133,7 @@ class ProtokolTaxingTest: QuickSpec {
         }
         describe("GetProps_ShouldExport_AllowanceChild2nd") {
             let test_examples: [(title: String, minYear: Int16, maxYear: Int16)] = [
-                ("2011-2022", 2011, 2022),
+                ("2010-2022", 2010, 2022),
             ]
             test_examples.forEach { (title: String, minYear: Int16, maxYear: Int16) in
                 context("tests for years \(title)") {
@@ -153,7 +153,7 @@ class ProtokolTaxingTest: QuickSpec {
         }
         describe("GetProps_ShouldExport_AllowanceChild3rd") {
             let test_examples: [(title: String, minYear: Int16, maxYear: Int16)] = [
-                ("2011-2022", 2011, 2022),
+                ("2010-2022", 2010, 2022),
             ]
             test_examples.forEach { (title: String, minYear: Int16, maxYear: Int16) in
                 context("tests for years \(title)") {
@@ -173,7 +173,7 @@ class ProtokolTaxingTest: QuickSpec {
         }
         describe("GetProps_ShouldExport_FactorAdvances") {
             let test_examples: [(title: String, minYear: Int16, maxYear: Int16)] = [
-                ("2011-2022", 2011, 2022),
+                ("2010-2022", 2010, 2022),
             ]
             test_examples.forEach { (title: String, minYear: Int16, maxYear: Int16) in
                 context("tests for years \(title)") {
@@ -193,7 +193,7 @@ class ProtokolTaxingTest: QuickSpec {
         }
         describe("GetProps_ShouldExport_FactorWithhold") {
             let test_examples: [(title: String, minYear: Int16, maxYear: Int16)] = [
-                ("2011-2022", 2011, 2022),
+                ("2010-2022", 2010, 2022),
             ]
             test_examples.forEach { (title: String, minYear: Int16, maxYear: Int16) in
                 context("tests for years \(title)") {
@@ -211,9 +211,9 @@ class ProtokolTaxingTest: QuickSpec {
                 }
             }
         }
-        describe("GetProps_ShouldExport_FactorSolitary") {
+        describe("GetProps_ShouldExport_FactorSolidary") {
             let test_examples: [(title: String, minYear: Int16, maxYear: Int16)] = [
-                ("2011-2022", 2011, 2022),
+                ("2010-2022", 2010, 2022),
             ]
             test_examples.forEach { (title: String, minYear: Int16, maxYear: Int16) in
                 context("tests for years \(title)") {
@@ -224,16 +224,36 @@ class ProtokolTaxingTest: QuickSpec {
                     }
 
                     it("GetProps should export values") {
-                        exportPropsDecFile(fileName: "04_Taxing_11_FactorSolitary.txt",
+                        exportPropsDecFile(fileName: "04_Taxing_11_FactorSolidary.txt",
                                 minYear: minYear, maxYear: maxYear, sut: factory!,
-                                function: { prop in prop.factorSolitary })
+                                function: { prop in prop.factorSolidary })
+                    }
+                }
+            }
+        }
+        describe("GetProps_ShouldExport_FactorTaxRate2") {
+            let test_examples: [(title: String, minYear: Int16, maxYear: Int16)] = [
+                ("2010-2022", 2010, 2022),
+            ]
+            test_examples.forEach { (title: String, minYear: Int16, maxYear: Int16) in
+                context("tests for years \(title)") {
+                    var factory: FactoryTaxing?
+
+                    beforeEach {
+                        factory = FactoryTaxing()
+                    }
+
+                    it("GetProps should export values") {
+                        exportPropsDecFile(fileName: "04_Taxing_12_FactorTaxRate2.txt",
+                                minYear: minYear, maxYear: maxYear, sut: factory!,
+                                function: { prop in prop.factorSolidary })
                     }
                 }
             }
         }
         describe("GetProps_ShouldExport_MinAmountOfTaxBonus") {
             let test_examples: [(title: String, minYear: Int16, maxYear: Int16)] = [
-                ("2011-2022", 2011, 2022),
+                ("2010-2022", 2010, 2022),
             ]
             test_examples.forEach { (title: String, minYear: Int16, maxYear: Int16) in
                 context("tests for years \(title)") {
@@ -244,7 +264,7 @@ class ProtokolTaxingTest: QuickSpec {
                     }
 
                     it("GetProps should export values") {
-                        exportPropsIntFile(fileName: "04_Taxing_12_MinAmountOfTaxBonus.txt",
+                        exportPropsIntFile(fileName: "04_Taxing_13_MinAmountOfTaxBonus.txt",
                                 minYear: minYear, maxYear: maxYear, sut: factory!,
                                 function: { prop in prop.minAmountOfTaxBonus })
                     }
@@ -253,7 +273,7 @@ class ProtokolTaxingTest: QuickSpec {
         }
         describe("GetProps_ShouldExport_MaxAmountOfTaxBonus") {
             let test_examples: [(title: String, minYear: Int16, maxYear: Int16)] = [
-                ("2011-2022", 2011, 2022),
+                ("2010-2022", 2010, 2022),
             ]
             test_examples.forEach { (title: String, minYear: Int16, maxYear: Int16) in
                 context("tests for years \(title)") {
@@ -264,7 +284,7 @@ class ProtokolTaxingTest: QuickSpec {
                     }
 
                     it("GetProps should export values") {
-                        exportPropsIntFile(fileName: "04_Taxing_13_MaxAmountOfTaxBonus.txt",
+                        exportPropsIntFile(fileName: "04_Taxing_14_MaxAmountOfTaxBonus.txt",
                                 minYear: minYear, maxYear: maxYear, sut: factory!,
                                 function: { prop in prop.maxAmountOfTaxBonus })
                     }
@@ -273,7 +293,7 @@ class ProtokolTaxingTest: QuickSpec {
         }
         describe("GetProps_ShouldExport_MarginIncomeOfTaxBonus") {
             let test_examples: [(title: String, minYear: Int16, maxYear: Int16)] = [
-                ("2011-2022", 2011, 2022),
+                ("2010-2022", 2010, 2022),
             ]
             test_examples.forEach { (title: String, minYear: Int16, maxYear: Int16) in
                 context("tests for years \(title)") {
@@ -284,7 +304,7 @@ class ProtokolTaxingTest: QuickSpec {
                     }
 
                     it("GetProps should export values") {
-                        exportPropsIntFile(fileName: "04_Taxing_14_MarginIncomeOfTaxBonus.txt",
+                        exportPropsIntFile(fileName: "04_Taxing_15_MarginIncomeOfTaxBonus.txt",
                                 minYear: minYear, maxYear: maxYear, sut: factory!,
                                 function: { prop in prop.marginIncomeOfTaxBonus })
                     }
@@ -293,7 +313,7 @@ class ProtokolTaxingTest: QuickSpec {
         }
         describe("GetProps_ShouldExport_MarginIncomeOfRounding") {
             let test_examples: [(title: String, minYear: Int16, maxYear: Int16)] = [
-                ("2011-2022", 2011, 2022),
+                ("2010-2022", 2010, 2022),
             ]
             test_examples.forEach { (title: String, minYear: Int16, maxYear: Int16) in
                 context("tests for years \(title)") {
@@ -304,7 +324,7 @@ class ProtokolTaxingTest: QuickSpec {
                     }
 
                     it("GetProps should export values") {
-                        exportPropsIntFile(fileName: "04_Taxing_15_MarginIncomeOfRounding.txt",
+                        exportPropsIntFile(fileName: "04_Taxing_16_MarginIncomeOfRounding.txt",
                                 minYear: minYear, maxYear: maxYear, sut: factory!,
                                 function: { prop in prop.marginIncomeOfRounding })
                     }
@@ -313,7 +333,7 @@ class ProtokolTaxingTest: QuickSpec {
         }
         describe("GetProps_ShouldExport_MarginIncomeOfWithhold") {
             let test_examples: [(title: String, minYear: Int16, maxYear: Int16)] = [
-                ("2011-2022", 2011, 2022),
+                ("2010-2022", 2010, 2022),
             ]
             test_examples.forEach { (title: String, minYear: Int16, maxYear: Int16) in
                 context("tests for years \(title)") {
@@ -324,16 +344,16 @@ class ProtokolTaxingTest: QuickSpec {
                     }
 
                     it("GetProps should export values") {
-                        exportPropsIntFile(fileName: "04_Taxing_16_MarginIncomeOfWithhold.txt",
+                        exportPropsIntFile(fileName: "04_Taxing_17_MarginIncomeOfWithhold.txt",
                                 minYear: minYear, maxYear: maxYear, sut: factory!,
                                 function: { prop in prop.marginIncomeOfWithhold })
                     }
                 }
             }
         }
-        describe("GetProps_ShouldExport_MarginIncomeOfSolitary") {
+        describe("GetProps_ShouldExport_MarginIncomeOfSolidary") {
             let test_examples: [(title: String, minYear: Int16, maxYear: Int16)] = [
-                ("2011-2022", 2011, 2022),
+                ("2010-2022", 2010, 2022),
             ]
             test_examples.forEach { (title: String, minYear: Int16, maxYear: Int16) in
                 context("tests for years \(title)") {
@@ -344,16 +364,36 @@ class ProtokolTaxingTest: QuickSpec {
                     }
 
                     it("GetProps should export values") {
-                        exportPropsIntFile(fileName: "04_Taxing_17_MarginIncomeOfSolitary.txt",
+                        exportPropsIntFile(fileName: "04_Taxing_18_MarginIncomeOfSolidary.txt",
                                 minYear: minYear, maxYear: maxYear, sut: factory!,
-                                function: { prop in prop.marginIncomeOfSolitary })
+                                function: { prop in prop.marginIncomeOfSolidary })
+                    }
+                }
+            }
+        }
+        describe("GetProps_ShouldExport_MarginIncomeOfTaxRate2") {
+            let test_examples: [(title: String, minYear: Int16, maxYear: Int16)] = [
+                ("2010-2022", 2010, 2022),
+            ]
+            test_examples.forEach { (title: String, minYear: Int16, maxYear: Int16) in
+                context("tests for years \(title)") {
+                    var factory: FactoryTaxing?
+
+                    beforeEach {
+                        factory = FactoryTaxing()
+                    }
+
+                    it("GetProps should export values") {
+                        exportPropsIntFile(fileName: "04_Taxing_19_MarginIncomeOfTaxRate2.txt",
+                                minYear: minYear, maxYear: maxYear, sut: factory!,
+                                function: { prop in prop.marginIncomeOfSolidary })
                     }
                 }
             }
         }
         describe("GetProps_ShouldExport_MarginIncomeOfWthEmp") {
             let test_examples: [(title: String, minYear: Int16, maxYear: Int16)] = [
-                ("2011-2022", 2011, 2022),
+                ("2010-2022", 2010, 2022),
             ]
             test_examples.forEach { (title: String, minYear: Int16, maxYear: Int16) in
                 context("tests for years \(title)") {
@@ -364,7 +404,7 @@ class ProtokolTaxingTest: QuickSpec {
                     }
 
                     it("GetProps should export values") {
-                        exportPropsIntFile(fileName: "04_Taxing_18_MarginIncomeOfWthEmp.txt",
+                        exportPropsIntFile(fileName: "04_Taxing_20_MarginIncomeOfWthEmp.txt",
                                 minYear: minYear, maxYear: maxYear, sut: factory!,
                                 function: { prop in prop.marginIncomeOfWthEmp })
                     }
@@ -373,7 +413,7 @@ class ProtokolTaxingTest: QuickSpec {
         }
         describe("GetProps_ShouldExport_MarginIncomeOfWthAgr") {
             let test_examples: [(title: String, minYear: Int16, maxYear: Int16)] = [
-                ("2011-2022", 2011, 2022),
+                ("2010-2022", 2010, 2022),
             ]
             test_examples.forEach { (title: String, minYear: Int16, maxYear: Int16) in
                 context("tests for years \(title)") {
@@ -384,7 +424,7 @@ class ProtokolTaxingTest: QuickSpec {
                     }
 
                     it("GetProps should export values") {
-                        exportPropsIntFile(fileName: "04_Taxing_19_MarginIncomeOfWthAgr.txt",
+                        exportPropsIntFile(fileName: "04_Taxing_21_MarginIncomeOfWthAgr.txt",
                                 minYear: minYear, maxYear: maxYear, sut: factory!,
                                 function: { prop in prop.marginIncomeOfWthAgr })
                     }

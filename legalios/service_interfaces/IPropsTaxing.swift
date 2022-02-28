@@ -15,13 +15,13 @@ public protocol IPropsTaxing : IProps {
     var allowanceChild3rd: Int32 { get }
     var factorAdvances: Decimal { get }
     var factorWithhold: Decimal { get }
-    var factorSolitary: Decimal { get }
+    var factorSolidary: Decimal { get }
     var minAmountOfTaxBonus: Int32 { get }
     var maxAmountOfTaxBonus: Int32 { get }
     var marginIncomeOfTaxBonus: Int32 { get }
     var marginIncomeOfRounding: Int32 { get }
     var marginIncomeOfWithhold: Int32 { get }
-    var marginIncomeOfSolitary: Int32 { get }
+    var marginIncomeOfSolidary: Int32 { get }
     var marginIncomeOfWthEmp: Int32 { get }
     var marginIncomeOfWthAgr: Int32 { get }
 }

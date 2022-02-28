@@ -21,13 +21,13 @@ class ProviderTaxing2016: ProviderTaxing {
                 allowanceChild3rd: allowanceChild3rd(period),
                 factorAdvances: factorAdvances(period),
                 factorWithhold: factorWithhold(period),
-                factorSolitary: factorSolitary(period),
+                factorSolidary: factorSolidary(period),
                 minAmountOfTaxBonus: minAmountOfTaxBonus(period),
                 maxAmountOfTaxBonus: maxAmountOfTaxBonus(period),
                 marginIncomeOfTaxBonus: marginIncomeOfTaxBonus(period),
                 marginIncomeOfRounding: marginIncomeOfRounding(period),
                 marginIncomeOfWithhold: marginIncomeOfWithhold(period),
-                marginIncomeOfSolitary: marginIncomeOfSolitary(period),
+                marginIncomeOfSolidary: marginIncomeOfSolidary(period),
                 marginIncomeOfWthEmp: marginIncomeOfWthEmp(period),
                 marginIncomeOfWthAgr: marginIncomeOfWthAgr(period))  as! P
     }
@@ -78,8 +78,8 @@ class ProviderTaxing2016: ProviderTaxing {
         return HistoryConstTaxing2016.FACTOR_WITHHOLD
     }
 
-    override func factorSolitary(_ period: IPeriod) -> Decimal {
-        return HistoryConstTaxing2016.FACTOR_SOLITARY
+    override func factorSolidary(_ period: IPeriod) -> Decimal {
+        return HistoryConstTaxing2016.FACTOR_SOLIDARY
     }
 
     override func minAmountOfTaxBonus(_ period: IPeriod) -> Int32 {
@@ -102,8 +102,8 @@ class ProviderTaxing2016: ProviderTaxing {
         return HistoryConstTaxing2016.MARGIN_INCOME_OF_WITHHOLD
     }
 
-    override func marginIncomeOfSolitary(_ period: IPeriod) -> Int32 {
-        return HistoryConstTaxing2016.MARGIN_INCOME_OF_SOLITARY
+    override func marginIncomeOfSolidary(_ period: IPeriod) -> Int32 {
+        return HistoryConstTaxing2016.MARGIN_INCOME_OF_SOLIDARY
     }
 
     override func marginIncomeOfWthEmp(_ period: IPeriod) -> Int32 {

@@ -15,7 +15,7 @@ class ProtokolSalaryTest: QuickSpec {
 
         describe("GetProps_ShouldExport_WorkingShiftWeek") {
             let test_examples: [(title: String, minYear: Int16, maxYear: Int16)] = [
-                ("2011-2022", 2011, 2022),
+                ("2010-2022", 2010, 2022),
             ]
             test_examples.forEach { (title: String, minYear: Int16, maxYear: Int16) in
                 context("tests for years \(title)") {
@@ -35,7 +35,7 @@ class ProtokolSalaryTest: QuickSpec {
         }
         describe("GetProps_ShouldExport_WorkingShiftTime") {
             let test_examples: [(title: String, minYear: Int16, maxYear: Int16)] = [
-                ("2011-2022", 2011, 2022),
+                ("2010-2022", 2010, 2022),
             ]
             test_examples.forEach { (title: String, minYear: Int16, maxYear: Int16) in
                 context("tests for years \(title)") {
@@ -55,7 +55,7 @@ class ProtokolSalaryTest: QuickSpec {
         }
         describe("GetProps_ShouldExport_MinMonthlyWage") {
             let test_examples: [(title: String, minYear: Int16, maxYear: Int16)] = [
-                ("2011-2022", 2011, 2022),
+                ("2010-2022", 2010, 2022),
             ]
             test_examples.forEach { (title: String, minYear: Int16, maxYear: Int16) in
                 context("tests for years \(title)") {
@@ -75,7 +75,7 @@ class ProtokolSalaryTest: QuickSpec {
         }
         describe("GetProps_ShouldExport_MinHourlyWage") {
             let test_examples: [(title: String, minYear: Int16, maxYear: Int16)] = [
-                ("2011-2022", 2011, 2022),
+                ("2010-2022", 2010, 2022),
             ]
             test_examples.forEach { (title: String, minYear: Int16, maxYear: Int16) in
                 context("tests for years \(title)") {

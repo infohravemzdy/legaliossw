@@ -15,13 +15,13 @@ class PropsTaxing : PropsBase, IPropsTaxing {
     let allowanceChild3rd: Int32
     let factorAdvances: Decimal
     let factorWithhold: Decimal
-    let factorSolitary: Decimal
+    let factorSolidary: Decimal
     let minAmountOfTaxBonus: Int32
     let maxAmountOfTaxBonus: Int32
     let marginIncomeOfTaxBonus: Int32
     let marginIncomeOfRounding: Int32
     let marginIncomeOfWithhold: Int32
-    let marginIncomeOfSolitary: Int32
+    let marginIncomeOfSolidary: Int32
     let marginIncomeOfWthEmp: Int32
     let marginIncomeOfWthAgr: Int32
 
@@ -36,13 +36,13 @@ class PropsTaxing : PropsBase, IPropsTaxing {
         allowanceChild3rd: Int32,
         factorAdvances: Decimal,
         factorWithhold: Decimal,
-        factorSolitary: Decimal,
+        factorSolidary: Decimal,
         minAmountOfTaxBonus: Int32,
         maxAmountOfTaxBonus: Int32,
         marginIncomeOfTaxBonus: Int32,
         marginIncomeOfRounding: Int32,
         marginIncomeOfWithhold: Int32,
-        marginIncomeOfSolitary: Int32,
+        marginIncomeOfSolidary: Int32,
         marginIncomeOfWthEmp: Int32,
         marginIncomeOfWthAgr: Int32) {
         self.allowancePayer = allowancePayer
@@ -55,13 +55,13 @@ class PropsTaxing : PropsBase, IPropsTaxing {
         self.allowanceChild3rd = allowanceChild3rd
         self.factorAdvances = factorAdvances
         self.factorWithhold = factorWithhold
-        self.factorSolitary = factorSolitary
+        self.factorSolidary = factorSolidary
         self.minAmountOfTaxBonus = minAmountOfTaxBonus
         self.maxAmountOfTaxBonus = maxAmountOfTaxBonus
         self.marginIncomeOfTaxBonus = marginIncomeOfTaxBonus
         self.marginIncomeOfRounding = marginIncomeOfRounding
         self.marginIncomeOfWithhold = marginIncomeOfWithhold
-        self.marginIncomeOfSolitary = marginIncomeOfSolitary
+        self.marginIncomeOfSolidary = marginIncomeOfSolidary
         self.marginIncomeOfWthEmp = marginIncomeOfWthEmp
         self.marginIncomeOfWthAgr = marginIncomeOfWthAgr
         super.init(version: version)
@@ -79,13 +79,13 @@ class PropsTaxing : PropsBase, IPropsTaxing {
                 allowanceChild3rd: 0,
                 factorAdvances: Decimal.zero,
                 factorWithhold: Decimal.zero,
-                factorSolitary: Decimal.zero,
+                factorSolidary: Decimal.zero,
                 minAmountOfTaxBonus: 0,
                 maxAmountOfTaxBonus: 0,
                 marginIncomeOfTaxBonus: 0,
                 marginIncomeOfRounding: 0,
                 marginIncomeOfWithhold: 0,
-                marginIncomeOfSolitary: 0,
+                marginIncomeOfSolidary: 0,
                 marginIncomeOfWthEmp: 0,
                 marginIncomeOfWthAgr: 0)
     }

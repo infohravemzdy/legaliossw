@@ -13,7 +13,7 @@ class ProtokolSocialTest: QuickSpec {
     override func spec() {
         describe("GetProps_ShouldExport_MaxAnnualsBasis") {
             let test_examples: [(title: String, minYear: Int16, maxYear: Int16)] = [
-                ("2011-2022", 2011, 2022),
+                ("2010-2022", 2010, 2022),
             ]
             test_examples.forEach { (title: String, minYear: Int16, maxYear: Int16) in
                 context("tests for years \(title)") {
@@ -33,7 +33,7 @@ class ProtokolSocialTest: QuickSpec {
         }
         describe("GetProps_ShouldExport_FactorEmployer") {
             let test_examples: [(title: String, minYear: Int16, maxYear: Int16)] = [
-                ("2011-2022", 2011, 2022),
+                ("2010-2022", 2010, 2022),
             ]
             test_examples.forEach { (title: String, minYear: Int16, maxYear: Int16) in
                 context("tests for years \(title)") {
@@ -53,7 +53,7 @@ class ProtokolSocialTest: QuickSpec {
         }
         describe("GetProps_ShouldExport_FactorEmployerHigher") {
             let test_examples: [(title: String, minYear: Int16, maxYear: Int16)] = [
-                ("2011-2022", 2011, 2022),
+                ("2010-2022", 2010, 2022),
             ]
             test_examples.forEach { (title: String, minYear: Int16, maxYear: Int16) in
                 context("tests for years \(title)") {
@@ -73,7 +73,7 @@ class ProtokolSocialTest: QuickSpec {
         }
         describe("GetProps_ShouldExport_FactorEmployee") {
             let test_examples: [(title: String, minYear: Int16, maxYear: Int16)] = [
-                ("2011-2022", 2011, 2022),
+                ("2010-2022", 2010, 2022),
             ]
             test_examples.forEach { (title: String, minYear: Int16, maxYear: Int16) in
                 context("tests for years \(title)") {
@@ -93,7 +93,7 @@ class ProtokolSocialTest: QuickSpec {
         }
         describe("GetProps_ShouldExport_FactorEmployeeGarant") {
             let test_examples: [(title: String, minYear: Int16, maxYear: Int16)] = [
-                ("2011-2022", 2011, 2022),
+                ("2010-2022", 2010, 2022),
             ]
             test_examples.forEach { (title: String, minYear: Int16, maxYear: Int16) in
                 context("tests for years \(title)") {
@@ -113,7 +113,7 @@ class ProtokolSocialTest: QuickSpec {
         }
         describe("GetProps_ShouldExport_FactorEmployeeReduce") {
             let test_examples: [(title: String, minYear: Int16, maxYear: Int16)] = [
-                ("2011-2022", 2011, 2022),
+                ("2010-2022", 2010, 2022),
             ]
             test_examples.forEach { (title: String, minYear: Int16, maxYear: Int16) in
                 context("tests for years \(title)") {
@@ -133,7 +133,7 @@ class ProtokolSocialTest: QuickSpec {
         }
         describe("GetProps_ShouldExport_MarginIncomeEmp") {
             let test_examples: [(title: String, minYear: Int16, maxYear: Int16)] = [
-                ("2011-2022", 2011, 2022),
+                ("2010-2022", 2010, 2022),
             ]
             test_examples.forEach { (title: String, minYear: Int16, maxYear: Int16) in
                 context("tests for years \(title)") {
@@ -153,7 +153,7 @@ class ProtokolSocialTest: QuickSpec {
         }
         describe("GetProps_ShouldExport_MarginIncomeAgr") {
             let test_examples: [(title: String, minYear: Int16, maxYear: Int16)] = [
-                ("2011-2022", 2011, 2022),
+                ("2010-2022", 2010, 2022),
             ]
             test_examples.forEach { (title: String, minYear: Int16, maxYear: Int16) in
                 context("tests for years \(title)") {

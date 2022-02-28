@@ -31,10 +31,13 @@
 		8DDAF255B3AF2D4AE61B1F1B /* HistoryConstSocial2021.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAFBD5480E2350D2DAE693 /* HistoryConstSocial2021.swift */; };
 		8DDAF258AFCFD6FECA5E65B4 /* ProviderSocial2017.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF6F1AAC759EB22DC6017 /* ProviderSocial2017.swift */; };
 		8DDAF25EB4F523F39A922A1C /* HistoryConstSalary2021.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF383F8E97ACC8644F19D /* HistoryConstSalary2021.swift */; };
+		8DDAF2609CED42699B7ECAC1 /* DecRoundingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF4142C2D0EBAF2D41CE5 /* DecRoundingTest.swift */; };
 		8DDAF29309D459AB525FA780 /* HistoryConstSalary2018.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAFB2738AA52611405708B /* HistoryConstSalary2018.swift */; };
 		8DDAF296DF5383F769F3101C /* ProviderSalary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF47CB51FC438D6D78417 /* ProviderSalary.swift */; };
+		8DDAF2B02A41ECE280C11D8D /* ContractTerms.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF3DD5D0E9BF8BAC69180 /* ContractTerms.swift */; };
 		8DDAF2D0AB5851B180416451 /* legalios.docc in Resources */ = {isa = PBXBuildFile; fileRef = 8DDAF8FF35F8D7FA92FDF7E8 /* legalios.docc */; };
 		8DDAF2D5311787A2AB15CA60 /* Service_Legalios_Example_01_Health_05_FactorCompoundTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF64CE9164A60CD12D50E /* Service_Legalios_Example_01_Health_05_FactorCompoundTest.swift */; };
+		8DDAF30D507AFAA8C960F49C /* SalaryRoundingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF42153C9505019243EBE /* SalaryRoundingTest.swift */; };
 		8DDAF30F6E29B5BD1195F77C /* IProviderHealth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF85ABCB2565D38C10ADD /* IProviderHealth.swift */; };
 		8DDAF331158D253E45D405D6 /* ProtokolHealthTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAFEEF2B96DD1B5CA51B22 /* ProtokolHealthTest.swift */; };
 		8DDAF34D94C141B56A9DB490 /* ProviderHealth2022.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF4531E5BA6E14A7A846D /* ProviderHealth2022.swift */; };
@@ -50,7 +53,7 @@
 		8DDAF3F351528BADBCB7BFA1 /* Service_Legalios_Example_03_Social_05_FactorEmployeeGarantTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAFA7514139B078D6EF84D /* Service_Legalios_Example_03_Social_05_FactorEmployeeGarantTest.swift */; };
 		8DDAF405DCB912CF045C4506 /* Service_Legalios_Example_02_Salary_04_MinHourlyWageTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAFC1040720B3D0269E8CC /* Service_Legalios_Example_02_Salary_04_MinHourlyWageTest.swift */; };
 		8DDAF431758A273B7FC37B2F /* ProtokolSalaryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF5584230F9784A14D3BD /* ProtokolSalaryTest.swift */; };
-		8DDAF4689BEB83925C3FE4B0 /* Service_Legalios_Example_04_Taxing_17_MarginIncomeOfSolitaryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF56D5A29356E0969375B /* Service_Legalios_Example_04_Taxing_17_MarginIncomeOfSolitaryTest.swift */; };
+		8DDAF4689BEB83925C3FE4B0 /* Service_Legalios_Example_04_Taxing_18_MarginIncomeOfSolitaryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF56D5A29356E0969375B /* Service_Legalios_Example_04_Taxing_18_MarginIncomeOfSolitaryTest.swift */; };
 		8DDAF4713CA40772F83E6959 /* IProviderSocial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF9468A4F70F431FB966E /* IProviderSocial.swift */; };
 		8DDAF499E6A23154DE0701BC /* HistoryConstHealth2019.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF118EDF4B3EC2F6BD66C /* HistoryConstHealth2019.swift */; };
 		8DDAF4A08A918B5277A1EBF8 /* Service_Legalios_Example_03_Social_06_FactorEmployeeReduceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAFF10CFC599AAF90F3203 /* Service_Legalios_Example_03_Social_06_FactorEmployeeReduceTest.swift */; };
@@ -67,6 +70,7 @@
 		8DDAF51743B4F5255476835B /* HistoryConstSalary2011.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF611CC5F1FA5DC854A21 /* HistoryConstSalary2011.swift */; };
 		8DDAF54E0CF7D45CA2450587 /* HistoryConstSocial2012.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF4942A6F725FA123F660 /* HistoryConstSocial2012.swift */; };
 		8DDAF55368DC17E10D8EE7FC /* ProviderTaxing2015.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAFF29D9A07F34146B111E /* ProviderTaxing2015.swift */; };
+		8DDAF562EDB2C6913D44C234 /* FactoriesHistoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF358A917E46037440558 /* FactoriesHistoryTest.swift */; };
 		8DDAF57F11F4B1D08EE50BB6 /* HistoryConstHealth2021.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF69133F456443760E66B /* HistoryConstHealth2021.swift */; };
 		8DDAF5AA21AAE8B518F56280 /* Service_Legalios_Example_04_Taxing_06_AllowanceChild1stTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF0ED8DB79B33DA347EE4 /* Service_Legalios_Example_04_Taxing_06_AllowanceChild1stTest.swift */; };
 		8DDAF5B03A8E109A481B683D /* HistoryConstSocial2017.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAFA4DD3F39DD3C024AF2B /* HistoryConstSocial2017.swift */; };
@@ -77,10 +81,11 @@
 		8DDAF5E9C9866BCB44A35DAA /* BundleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF219EADEFCC1175F0914 /* BundleBuilder.swift */; };
 		8DDAF5FA334369F4400AB3C0 /* ProviderSalary2018.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAFEF0545C7E538CF6FE3C /* ProviderSalary2018.swift */; };
 		8DDAF61FE9C4524588825A38 /* ProtokolTaxingBaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF58C1BC00A8F3ABC097B /* ProtokolTaxingBaseTest.swift */; };
-		8DDAF63129C48053A6D8230E /* Service_Legalios_Example_04_Taxing_13_MaxAmountOfTaxBonusTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF80EFFDA5D162ABF0E9D /* Service_Legalios_Example_04_Taxing_13_MaxAmountOfTaxBonusTest.swift */; };
+		8DDAF63129C48053A6D8230E /* Service_Legalios_Example_04_Taxing_14_MaxAmountOfTaxBonusTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF80EFFDA5D162ABF0E9D /* Service_Legalios_Example_04_Taxing_14_MaxAmountOfTaxBonusTest.swift */; };
 		8DDAF65F1572F9AFEAEA68D5 /* Service_Legalios_Example_04_Taxing_08_AllowanceChild3rdTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAFB96659DA7B315265E32 /* Service_Legalios_Example_04_Taxing_08_AllowanceChild3rdTest.swift */; };
 		8DDAF66C95EA70C108378806 /* ProviderHealth2021.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAFBA7E3797B716C06C7D3 /* ProviderHealth2021.swift */; };
 		8DDAF67D309E4C9CC5FA5617 /* HistoryConstSalary2020.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF90C97A6482DCF5A09E4 /* HistoryConstSalary2020.swift */; };
+		8DDAF6908A8D4C3C4035D923 /* BundleProps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF323B5ACCB44B61C1D18 /* BundleProps.swift */; };
 		8DDAF698CEDBE7DB5594BE20 /* ProviderTaxing2014.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAFF82327C0270198F5AD3 /* ProviderTaxing2014.swift */; };
 		8DDAF6BE0B2902B99990A329 /* IProps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF56B83C51CC50EDADEC9 /* IProps.swift */; };
 		8DDAF6C01C1A2973612E9AC6 /* ProviderTaxing2013.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF465674FC9E694A32AF7 /* ProviderTaxing2013.swift */; };
@@ -91,7 +96,7 @@
 		8DDAF731E0E22737C7F59111 /* VersionId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAFB197684450D50BF78CB /* VersionId.swift */; };
 		8DDAF74114F2624B4319A3A9 /* Service_Legalios_Example_03_Social_04_FactorEmployeeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF4659E88FDE3E473BE3B /* Service_Legalios_Example_03_Social_04_FactorEmployeeTest.swift */; };
 		8DDAF7921C2BF6CB9F519071 /* IProviderSalary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF280A6B9DEE94728E8FD /* IProviderSalary.swift */; };
-		8DDAF7A581142D54DE0676F9 /* Service_Legalios_Example_04_Taxing_16_MarginIncomeOfWithholdTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF1A17BA0114432DCB2EF /* Service_Legalios_Example_04_Taxing_16_MarginIncomeOfWithholdTest.swift */; };
+		8DDAF7A581142D54DE0676F9 /* Service_Legalios_Example_04_Taxing_17_MarginIncomeOfWithholdTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF1A17BA0114432DCB2EF /* Service_Legalios_Example_04_Taxing_17_MarginIncomeOfWithholdTest.swift */; };
 		8DDAF7B5B4E9510900FB3D8B /* HistoryConstSocial2015.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF57218349A9ABC19194C /* HistoryConstSocial2015.swift */; };
 		8DDAF7BB6322622603CBBD3C /* HistoryConstSalary2014.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF1185B9422CF66509127 /* HistoryConstSalary2014.swift */; };
 		8DDAF7BDEA8A652835B7B516 /* IProviderFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF370CA5A462DF023472E /* IProviderFactory.swift */; };
@@ -102,7 +107,7 @@
 		8DDAF80170BBA3AAF02F6439 /* HistoryConstSocial2016.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAFE59F782C5292DF7BFEE /* HistoryConstSocial2016.swift */; };
 		8DDAF804E9982979A0E870B6 /* ProviderHealth2011.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF82A254068D140451515 /* ProviderHealth2011.swift */; };
 		8DDAF81A1DEA340D7E40C03D /* ProviderTaxing2019.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF594198AF4E64ED73EC6 /* ProviderTaxing2019.swift */; };
-		8DDAF83CFE681D601A55FCE7 /* Service_Legalios_Example_04_Taxing_18_MarginIncomeOfWthEmpTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAFE2AB3159B5D84B4851A /* Service_Legalios_Example_04_Taxing_18_MarginIncomeOfWthEmpTest.swift */; };
+		8DDAF83CFE681D601A55FCE7 /* Service_Legalios_Example_04_Taxing_20_MarginIncomeOfWthEmpTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAFE2AB3159B5D84B4851A /* Service_Legalios_Example_04_Taxing_20_MarginIncomeOfWthEmpTest.swift */; };
 		8DDAF84093A5DFF3965322A7 /* Service_Legalios_Example_04_Taxing_02_AllowanceDisab1stTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF507FD2CC825CD1EB696 /* Service_Legalios_Example_04_Taxing_02_AllowanceDisab1stTest.swift */; };
 		8DDAF841EDAFFE615CED3910 /* Service_Legalios_Example_03_Social_01_MaxAnnualsBasisTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF855312017D0CB1BA8D7 /* Service_Legalios_Example_03_Social_01_MaxAnnualsBasisTest.swift */; };
 		8DDAF858499BC20677FCABE7 /* Service_Legalios_Example_03_Social_08_MarginIncomeAgrTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF3F2000D224ADAABF508 /* Service_Legalios_Example_03_Social_08_MarginIncomeAgrTest.swift */; };
@@ -110,6 +115,7 @@
 		8DDAF88FC6AFBB714CB55E76 /* ProviderSocial2016.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAFF3CFAE40AF0F18ED446 /* ProviderSocial2016.swift */; };
 		8DDAF89E89C1D45AD293B05F /* Service_Legalios_Example_01_Health_06_FactorEmployeeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF8015C6FC843723704BB /* Service_Legalios_Example_01_Health_06_FactorEmployeeTest.swift */; };
 		8DDAF8A13185AC68B093D9EA /* ProviderTaxing2022.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAFA63E2ADAD5FEE2038EE /* ProviderTaxing2022.swift */; };
+		8DDAF8ACAFD44E774ABE1AA7 /* TaxingOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF88B9569E19907BAB1C0 /* TaxingOptions.swift */; };
 		8DDAF8B6BFF607C9F584BF02 /* ProviderBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAFB3640AF3C671A837CF0 /* ProviderBase.swift */; };
 		8DDAF8BD97C2DE42979E24F7 /* ProviderHealth2019.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAFF6F624C9DD6287975B8 /* ProviderHealth2019.swift */; };
 		8DDAF8FEA28D8F80E0B5A427 /* ProtokolTaxingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF115AA3E70CFCEDFBFA5 /* ProtokolTaxingTest.swift */; };
@@ -118,8 +124,9 @@
 		8DDAF994CCD06AF9E5DEF1B8 /* ProviderSalary2021.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAFF0AF9BA7DAB738B3203 /* ProviderSalary2021.swift */; };
 		8DDAF9B38F92D0ACCA6A4C21 /* ProviderFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAFE5E3270E4DC835051F7 /* ProviderFactory.swift */; };
 		8DDAF9B7D162521E8DDCB9B2 /* HistoryConstSalary2017.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF185BC8ED7C45175BC04 /* HistoryConstSalary2017.swift */; };
-		8DDAF9BAE8FDDDB7410A3230 /* Service_Legalios_Example_04_Taxing_12_MinAmountOfTaxBonusTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAFFF08DD09CC05C092536 /* Service_Legalios_Example_04_Taxing_12_MinAmountOfTaxBonusTest.swift */; };
+		8DDAF9BAE8FDDDB7410A3230 /* Service_Legalios_Example_04_Taxing_13_MinAmountOfTaxBonusTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAFFF08DD09CC05C092536 /* Service_Legalios_Example_04_Taxing_13_MinAmountOfTaxBonusTest.swift */; };
 		8DDAF9CD5A969FDA488AEA7D /* ProviderHealth2012.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF3CF7BFA3395AE68943C /* ProviderHealth2012.swift */; };
+		8DDAF9D1C8A2600EC8BDFAA6 /* Service_Legalios_Example_04_Taxing_12_FactorTaxRate2Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF92D4B3FD3F51228CC4B /* Service_Legalios_Example_04_Taxing_12_FactorTaxRate2Test.swift */; };
 		8DDAF9DF14B66B91E39159A0 /* HistoryConstHealth2018.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF478C9DCA587F2D3BA67 /* HistoryConstHealth2018.swift */; };
 		8DDAF9E09F70FD74F7A4697A /* FactorySalary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAFDFC8A044478402DD443 /* FactorySalary.swift */; };
 		8DDAF9EFA8CEBD4FB4437051 /* HistoryConstTaxing2012.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF7CABB380933AFB1F546 /* HistoryConstTaxing2012.swift */; };
@@ -129,10 +136,10 @@
 		8DDAFA553CAC0140D9C3EC45 /* ProviderSocial2015.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF7DC2822C44FDB998353 /* ProviderSocial2015.swift */; };
 		8DDAFA5E2EA4694369AE1749 /* ProviderTaxing2018.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF8F1504F555CD162B512 /* ProviderTaxing2018.swift */; };
 		8DDAFA7B16814DA8D8E3F7F0 /* HistoryConstSalary2022.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF3EB04170FE1A20D3657 /* HistoryConstSalary2022.swift */; };
-		8DDAFA90D2FAC6EF525BDE66 /* Service_Legalios_Example_04_Taxing_19_MarginIncomeOfWthAgrTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF9EE511C908B1E84E649 /* Service_Legalios_Example_04_Taxing_19_MarginIncomeOfWthAgrTest.swift */; };
+		8DDAFA90D2FAC6EF525BDE66 /* Service_Legalios_Example_04_Taxing_21_MarginIncomeOfWthAgrTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF9EE511C908B1E84E649 /* Service_Legalios_Example_04_Taxing_21_MarginIncomeOfWthAgrTest.swift */; };
 		8DDAFA9291EB24C96741AC22 /* Service_Legalios_Example_03_Social_07_MarginIncomeEmpTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAFC1CC14594765828D7CD /* Service_Legalios_Example_03_Social_07_MarginIncomeEmpTest.swift */; };
 		8DDAFAC2B12ED593A5E310A0 /* ServiceLegalios.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF4B7C2AA7A8446DCEF31 /* ServiceLegalios.swift */; };
-		8DDAFADCF33DE342DAC526E2 /* Service_Legalios_Example_04_Taxing_15_MarginIncomeOfRoundingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAFF9343CF7E297C920E50 /* Service_Legalios_Example_04_Taxing_15_MarginIncomeOfRoundingTest.swift */; };
+		8DDAFADCF33DE342DAC526E2 /* Service_Legalios_Example_04_Taxing_16_MarginIncomeOfRoundingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAFF9343CF7E297C920E50 /* Service_Legalios_Example_04_Taxing_16_MarginIncomeOfRoundingTest.swift */; };
 		8DDAFB1815DCEDDD864FC8AD /* HistoryConstTaxing2017.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAFB80DAB1CC5E4569BBB8 /* HistoryConstTaxing2017.swift */; };
 		8DDAFB1F05E0F4FF0F3CE5A7 /* HistoryConstTaxing2014.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF19676EAF7BE147C98B0 /* HistoryConstTaxing2014.swift */; };
 		8DDAFB46FF81140B58DA4B8F /* ProviderHealth2020.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAFA7424C77189F327D57F /* ProviderHealth2020.swift */; };
@@ -146,6 +153,7 @@
 		8DDAFBEFEEDB7E8E3E959E93 /* Service_Legalios_Example_04_Taxing_07_AllowanceChild2ndTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF9C5D905E454F5702BA3 /* Service_Legalios_Example_04_Taxing_07_AllowanceChild2ndTest.swift */; };
 		8DDAFC08A0750FD9BF96EEB1 /* legalios.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DDAF8FF2EE6B5FDE17404ED /* legalios.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8DDAFC0BAEB437A118CB0964 /* ProviderTaxing2012.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF6D6822488769558B812 /* ProviderTaxing2012.swift */; };
+		8DDAFC1EDF0E4D418D911F8C /* OperationsDec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF1AAD48507380A1871C0 /* OperationsDec.swift */; };
 		8DDAFC26780B4F0F41094D82 /* IServiceLegalios.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF5FDDE537EB0BB619460 /* IServiceLegalios.swift */; };
 		8DDAFC53023C57B4E226494A /* ProtokolHealthBaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAFC19EFCFE5EBC5AAFE8A /* ProtokolHealthBaseTest.swift */; };
 		8DDAFC6D3563437B0ACC941C /* ProviderSocial2018.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAFEBA1E332732EC05912C /* ProviderSocial2018.swift */; };
@@ -162,12 +170,15 @@
 		8DDAFCF6683815C2F97109F1 /* ProviderTaxing2021.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAFEA2B5F46CB4508FEE67 /* ProviderTaxing2021.swift */; };
 		8DDAFCF7E80380DB15512C80 /* HistoryConstSocial2014.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF46106067D12DBC704C6 /* HistoryConstSocial2014.swift */; };
 		8DDAFD3BE91D09278FBB5B54 /* HistoryConstSalary2016.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAFACB8FD96767F53E64B7 /* HistoryConstSalary2016.swift */; };
+		8DDAFD495A88973608F34FA2 /* OperationsRound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF3DC595BA391D0E3E613 /* OperationsRound.swift */; };
 		8DDAFD61C6344A207D30D838 /* ProviderHealth2013.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF0D62538F9506343E266 /* ProviderHealth2013.swift */; };
 		8DDAFD705E01E44AD7EE67CE /* ProviderSocial2020.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAFDFBDD235A6CD9BE4F88 /* ProviderSocial2020.swift */; };
 		8DDAFD7A3B09936BDC07B8EE /* HistoryConstTaxing2020.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF4BF98CEB2B33C2773CE /* HistoryConstTaxing2020.swift */; };
 		8DDAFDA22A24CF0889FD26EF /* ProtokolSalaryBaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAFF4A44F359F4047031C4 /* ProtokolSalaryBaseTest.swift */; };
+		8DDAFDB31B18C54AC71D6B12 /* OperationsPeriod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF227098E94DBEC00F250 /* OperationsPeriod.swift */; };
 		8DDAFDB6E9023C3FDC3FBBD1 /* Service_Legalios_Example_04_Taxing_05_AllowanceStudyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAFD0EF059B9B18B9CEFA2 /* Service_Legalios_Example_04_Taxing_05_AllowanceStudyTest.swift */; };
 		8DDAFDC48FF72D5155FFA8D5 /* FactorySocial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF93B9E17FAAEC9BB30EC /* FactorySocial.swift */; };
+		8DDAFDF703BFA215CB480B55 /* Service_Legalios_Example_04_Taxing_19_MarginIncomeOfTaxRate2Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF5EE83AA6BE8114E4100 /* Service_Legalios_Example_04_Taxing_19_MarginIncomeOfTaxRate2Test.swift */; };
 		8DDAFE144970F625669F02D9 /* ProviderSocial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF5F3693A794CF327ED19 /* ProviderSocial.swift */; };
 		8DDAFE21D684B58768AD87F1 /* FactorySocialTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAFD18F6F0ACD410FF2FCC /* FactorySocialTest.swift */; };
 		8DDAFE32BE45D8E4164BA8FF /* ProviderSalary2013.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF134C71EF530C12C9610 /* ProviderSalary2013.swift */; };
@@ -181,8 +192,8 @@
 		8DDAFE761A14EE40BCBBA586 /* Service_Legalios_Example_02_Salary_03_MinMonthlyWageTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAFF8C7F3771B596E362A8 /* Service_Legalios_Example_02_Salary_03_MinMonthlyWageTest.swift */; };
 		8DDAFE963C7DF84FFBC9EAFC /* HistoryConstTaxing2019.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF63839ED389E62EA5271 /* HistoryConstTaxing2019.swift */; };
 		8DDAFEF5B8F9A28722959214 /* HistoryConstTaxing2011.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF0F969F46A9D7945FE36 /* HistoryConstTaxing2011.swift */; };
-		8DDAFF0321ED813B127E5C1F /* Service_Legalios_Example_04_Taxing_14_MarginIncomeOfTaxBonusTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF84CDE4D380882F99ACF /* Service_Legalios_Example_04_Taxing_14_MarginIncomeOfTaxBonusTest.swift */; };
-		8DDAFF04E2F16A6B09B4CFA3 /* Service_Legalios_Example_BundleFailure2010Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF678F8A1FD22C3618CFB /* Service_Legalios_Example_BundleFailure2010Test.swift */; };
+		8DDAFF0321ED813B127E5C1F /* Service_Legalios_Example_04_Taxing_15_MarginIncomeOfTaxBonusTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF84CDE4D380882F99ACF /* Service_Legalios_Example_04_Taxing_15_MarginIncomeOfTaxBonusTest.swift */; };
+		8DDAFF04E2F16A6B09B4CFA3 /* Service_Legalios_Example_BundleFailure2009Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF678F8A1FD22C3618CFB /* Service_Legalios_Example_BundleFailure2009Test.swift */; };
 		8DDAFF22F37DCC2DAF67DBDD /* HistoryConstHealth2014.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAFF040F57BFF1BF551CBD /* HistoryConstHealth2014.swift */; };
 		8DDAFF4AF894CA119DF2A918 /* HistoryConstHealth2015.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF8C8C38C9AF94C6FE89E /* HistoryConstHealth2015.swift */; };
 		8DDAFF4FB2CE33B990770EC3 /* ProviderTaxing2016.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAFBB7F1650E18A13725C1 /* ProviderTaxing2016.swift */; };
@@ -193,7 +204,6 @@
 		8DDAFF794EFD9F324DE0BA40 /* FactoryTaxing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAFE6D6DB556D77E37B305 /* FactoryTaxing.swift */; };
 		8DDAFF7B2E9240C749A45897 /* IProviderTaxing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAFDA6D15E52D49D2A0533 /* IProviderTaxing.swift */; };
 		8DDAFF9754EAD6848DBBAA45 /* PropsSocial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF0BCC4F4C26E25977190 /* PropsSocial.swift */; };
-		8DDAFFB22DFF79F44E5119F8 /* BundleProps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAF2B700ECC778EC5E0B74 /* BundleProps.swift */; };
 		8DDAFFBF28E3A6A8531F73F0 /* FactoryTaxingTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAFF8013C58DCB50C9BEF6 /* FactoryTaxingTest.swift */; };
 		8DDAFFD536BAF58B77DADF97 /* HistoryConstSocial2019.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAFA57AEA47CD5B67A56C7 /* HistoryConstSocial2019.swift */; };
 		8DDAFFDC161CD6F33191C546 /* HistoryConstSocial2011.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DDAFC6595CB25DA5DA32C8A /* HistoryConstSocial2011.swift */; };
@@ -234,20 +244,23 @@
 		8DDAF187135645A726A62464 /* Service_Legalios_Example_04_Taxing_11_FactorSolitaryTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service_Legalios_Example_04_Taxing_11_FactorSolitaryTest.swift; sourceTree = "<group>"; };
 		8DDAF19676EAF7BE147C98B0 /* HistoryConstTaxing2014.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryConstTaxing2014.swift; sourceTree = "<group>"; };
 		8DDAF19A28EEE608FFAC0F52 /* HistoryConstHealth2020.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryConstHealth2020.swift; sourceTree = "<group>"; };
-		8DDAF1A17BA0114432DCB2EF /* Service_Legalios_Example_04_Taxing_16_MarginIncomeOfWithholdTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service_Legalios_Example_04_Taxing_16_MarginIncomeOfWithholdTest.swift; sourceTree = "<group>"; };
+		8DDAF1A17BA0114432DCB2EF /* Service_Legalios_Example_04_Taxing_17_MarginIncomeOfWithholdTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service_Legalios_Example_04_Taxing_17_MarginIncomeOfWithholdTest.swift; sourceTree = "<group>"; };
+		8DDAF1AAD48507380A1871C0 /* OperationsDec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationsDec.swift; sourceTree = "<group>"; };
 		8DDAF1C85FE729419CB8028A /* Service_Legalios_Example_03_Social_02_FactorEmployerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service_Legalios_Example_03_Social_02_FactorEmployerTest.swift; sourceTree = "<group>"; };
 		8DDAF1D2541C240A28023C78 /* Service_Legalios_Example_04_Taxing_03_AllowanceDisab2ndTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service_Legalios_Example_04_Taxing_03_AllowanceDisab2ndTest.swift; sourceTree = "<group>"; };
 		8DDAF20274934599FF84B335 /* ProviderSalary2015.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderSalary2015.swift; sourceTree = "<group>"; };
 		8DDAF213BFE42383A06AE600 /* legalios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = legalios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DDAF219EADEFCC1175F0914 /* BundleBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BundleBuilder.swift; sourceTree = "<group>"; };
+		8DDAF227098E94DBEC00F250 /* OperationsPeriod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationsPeriod.swift; sourceTree = "<group>"; };
 		8DDAF27C23910B88381EE703 /* ProviderHealth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderHealth.swift; sourceTree = "<group>"; };
 		8DDAF280A6B9DEE94728E8FD /* IProviderSalary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IProviderSalary.swift; sourceTree = "<group>"; };
 		8DDAF28BB3A0BDC31DC38F45 /* HistoryConstTaxing2015.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryConstTaxing2015.swift; sourceTree = "<group>"; };
-		8DDAF2B700ECC778EC5E0B74 /* BundleProps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BundleProps.swift; sourceTree = "<group>"; };
 		8DDAF2DA9C73C2933D1302D7 /* Service_Legalios_Example_01_Health_08_MarginIncomeAgrTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service_Legalios_Example_01_Health_08_MarginIncomeAgrTest.swift; sourceTree = "<group>"; };
 		8DDAF3103F96E0155918A867 /* PropsHealth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropsHealth.swift; sourceTree = "<group>"; };
+		8DDAF323B5ACCB44B61C1D18 /* BundleProps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BundleProps.swift; sourceTree = "<group>"; };
 		8DDAF341A3A015024A5DD3B2 /* IPropsHealth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPropsHealth.swift; sourceTree = "<group>"; };
 		8DDAF341FE5BC34278086F60 /* ProviderSalary2012.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderSalary2012.swift; sourceTree = "<group>"; };
+		8DDAF358A917E46037440558 /* FactoriesHistoryTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactoriesHistoryTest.swift; sourceTree = "<group>"; };
 		8DDAF370CA5A462DF023472E /* IProviderFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IProviderFactory.swift; sourceTree = "<group>"; };
 		8DDAF383F8E97ACC8644F19D /* HistoryConstSalary2021.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryConstSalary2021.swift; sourceTree = "<group>"; };
 		8DDAF3AA1085F755A4DB2A4B /* Service_Legalios_Example_03_Social_03_FactorEmployerHigherTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service_Legalios_Example_03_Social_03_FactorEmployerHigherTest.swift; sourceTree = "<group>"; };
@@ -256,10 +269,14 @@
 		8DDAF3CC10324D5149829592 /* ProtokolSocialBaseTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtokolSocialBaseTest.swift; sourceTree = "<group>"; };
 		8DDAF3CF7BFA3395AE68943C /* ProviderHealth2012.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderHealth2012.swift; sourceTree = "<group>"; };
 		8DDAF3D6241D12EFF2A38441 /* ProviderSalary2022.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderSalary2022.swift; sourceTree = "<group>"; };
+		8DDAF3DC595BA391D0E3E613 /* OperationsRound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationsRound.swift; sourceTree = "<group>"; };
+		8DDAF3DD5D0E9BF8BAC69180 /* ContractTerms.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContractTerms.swift; sourceTree = "<group>"; };
 		8DDAF3E6B5A915FA3D811FB1 /* ProviderTaxing2011.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderTaxing2011.swift; sourceTree = "<group>"; };
 		8DDAF3EB04170FE1A20D3657 /* HistoryConstSalary2022.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryConstSalary2022.swift; sourceTree = "<group>"; };
 		8DDAF3F2000D224ADAABF508 /* Service_Legalios_Example_03_Social_08_MarginIncomeAgrTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service_Legalios_Example_03_Social_08_MarginIncomeAgrTest.swift; sourceTree = "<group>"; };
 		8DDAF3FFA3422000BAC9A1E3 /* HistoryConstSalary2013.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryConstSalary2013.swift; sourceTree = "<group>"; };
+		8DDAF4142C2D0EBAF2D41CE5 /* DecRoundingTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecRoundingTest.swift; sourceTree = "<group>"; };
+		8DDAF42153C9505019243EBE /* SalaryRoundingTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SalaryRoundingTest.swift; sourceTree = "<group>"; };
 		8DDAF4531E5BA6E14A7A846D /* ProviderHealth2022.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderHealth2022.swift; sourceTree = "<group>"; };
 		8DDAF46106067D12DBC704C6 /* HistoryConstSocial2014.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryConstSocial2014.swift; sourceTree = "<group>"; };
 		8DDAF465674FC9E694A32AF7 /* ProviderTaxing2013.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderTaxing2013.swift; sourceTree = "<group>"; };
@@ -275,7 +292,7 @@
 		8DDAF5348DBF2E4C2D037469 /* IPropsProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPropsProvider.swift; sourceTree = "<group>"; };
 		8DDAF5584230F9784A14D3BD /* ProtokolSalaryTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtokolSalaryTest.swift; sourceTree = "<group>"; };
 		8DDAF56B83C51CC50EDADEC9 /* IProps.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IProps.swift; sourceTree = "<group>"; };
-		8DDAF56D5A29356E0969375B /* Service_Legalios_Example_04_Taxing_17_MarginIncomeOfSolitaryTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service_Legalios_Example_04_Taxing_17_MarginIncomeOfSolitaryTest.swift; sourceTree = "<group>"; };
+		8DDAF56D5A29356E0969375B /* Service_Legalios_Example_04_Taxing_18_MarginIncomeOfSolitaryTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service_Legalios_Example_04_Taxing_18_MarginIncomeOfSolitaryTest.swift; sourceTree = "<group>"; };
 		8DDAF57218349A9ABC19194C /* HistoryConstSocial2015.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryConstSocial2015.swift; sourceTree = "<group>"; };
 		8DDAF58AF5F9B118C97E52EE /* PropsTaxing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PropsTaxing.swift; sourceTree = "<group>"; };
 		8DDAF58C1BC00A8F3ABC097B /* ProtokolTaxingBaseTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProtokolTaxingBaseTest.swift; sourceTree = "<group>"; };
@@ -283,6 +300,7 @@
 		8DDAF59453C1C03D45161BAC /* HistoryConstTaxing2022.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryConstTaxing2022.swift; sourceTree = "<group>"; };
 		8DDAF5D3600F826E572E00E1 /* Service_Legalios_Example_01_Health_04_LimMonthlyDis50Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service_Legalios_Example_01_Health_04_LimMonthlyDis50Test.swift; sourceTree = "<group>"; };
 		8DDAF5DD84BEEC0B4D14ABBF /* Service_Legalios_Example_04_Taxing_10_FactorWithholdTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service_Legalios_Example_04_Taxing_10_FactorWithholdTest.swift; sourceTree = "<group>"; };
+		8DDAF5EE83AA6BE8114E4100 /* Service_Legalios_Example_04_Taxing_19_MarginIncomeOfTaxRate2Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service_Legalios_Example_04_Taxing_19_MarginIncomeOfTaxRate2Test.swift; sourceTree = "<group>"; };
 		8DDAF5F3693A794CF327ED19 /* ProviderSocial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderSocial.swift; sourceTree = "<group>"; };
 		8DDAF5FDDE537EB0BB619460 /* IServiceLegalios.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IServiceLegalios.swift; sourceTree = "<group>"; };
 		8DDAF606CFAA8E63BBF3D1CE /* Service_Legalios_Example_01_Health_02_MaxAnnualsBasisTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service_Legalios_Example_01_Health_02_MaxAnnualsBasisTest.swift; sourceTree = "<group>"; };
@@ -292,7 +310,7 @@
 		8DDAF6498C1A592D310AB06F /* HistoryConstHealth2013.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryConstHealth2013.swift; sourceTree = "<group>"; };
 		8DDAF64CE9164A60CD12D50E /* Service_Legalios_Example_01_Health_05_FactorCompoundTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service_Legalios_Example_01_Health_05_FactorCompoundTest.swift; sourceTree = "<group>"; };
 		8DDAF66A9EB6FA675C913EEB /* Service_Legalios_Example_01_Health_03_LimMonthlyStateTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service_Legalios_Example_01_Health_03_LimMonthlyStateTest.swift; sourceTree = "<group>"; };
-		8DDAF678F8A1FD22C3618CFB /* Service_Legalios_Example_BundleFailure2010Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service_Legalios_Example_BundleFailure2010Test.swift; sourceTree = "<group>"; };
+		8DDAF678F8A1FD22C3618CFB /* Service_Legalios_Example_BundleFailure2009Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service_Legalios_Example_BundleFailure2009Test.swift; sourceTree = "<group>"; };
 		8DDAF69133F456443760E66B /* HistoryConstHealth2021.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryConstHealth2021.swift; sourceTree = "<group>"; };
 		8DDAF6D6822488769558B812 /* ProviderTaxing2012.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderTaxing2012.swift; sourceTree = "<group>"; };
 		8DDAF6F1AAC759EB22DC6017 /* ProviderSocial2017.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderSocial2017.swift; sourceTree = "<group>"; };
@@ -309,12 +327,13 @@
 		8DDAF7EE0CAFA0E7204291BE /* legaliosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = legaliosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DDAF7FDBEE23BE0C757659B /* HistoryResultError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryResultError.swift; sourceTree = "<group>"; };
 		8DDAF8015C6FC843723704BB /* Service_Legalios_Example_01_Health_06_FactorEmployeeTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service_Legalios_Example_01_Health_06_FactorEmployeeTest.swift; sourceTree = "<group>"; };
-		8DDAF80EFFDA5D162ABF0E9D /* Service_Legalios_Example_04_Taxing_13_MaxAmountOfTaxBonusTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service_Legalios_Example_04_Taxing_13_MaxAmountOfTaxBonusTest.swift; sourceTree = "<group>"; };
+		8DDAF80EFFDA5D162ABF0E9D /* Service_Legalios_Example_04_Taxing_14_MaxAmountOfTaxBonusTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service_Legalios_Example_04_Taxing_14_MaxAmountOfTaxBonusTest.swift; sourceTree = "<group>"; };
 		8DDAF82A254068D140451515 /* ProviderHealth2011.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderHealth2011.swift; sourceTree = "<group>"; };
-		8DDAF84CDE4D380882F99ACF /* Service_Legalios_Example_04_Taxing_14_MarginIncomeOfTaxBonusTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service_Legalios_Example_04_Taxing_14_MarginIncomeOfTaxBonusTest.swift; sourceTree = "<group>"; };
+		8DDAF84CDE4D380882F99ACF /* Service_Legalios_Example_04_Taxing_15_MarginIncomeOfTaxBonusTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service_Legalios_Example_04_Taxing_15_MarginIncomeOfTaxBonusTest.swift; sourceTree = "<group>"; };
 		8DDAF855312017D0CB1BA8D7 /* Service_Legalios_Example_03_Social_01_MaxAnnualsBasisTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service_Legalios_Example_03_Social_01_MaxAnnualsBasisTest.swift; sourceTree = "<group>"; };
 		8DDAF85ABCB2565D38C10ADD /* IProviderHealth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IProviderHealth.swift; sourceTree = "<group>"; };
 		8DDAF861504E00E40601A020 /* HistoryConstSocial2013.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryConstSocial2013.swift; sourceTree = "<group>"; };
+		8DDAF88B9569E19907BAB1C0 /* TaxingOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaxingOptions.swift; sourceTree = "<group>"; };
 		8DDAF88C2340AB040D5D389D /* ProviderHealth2015.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderHealth2015.swift; sourceTree = "<group>"; };
 		8DDAF8C8C38C9AF94C6FE89E /* HistoryConstHealth2015.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryConstHealth2015.swift; sourceTree = "<group>"; };
 		8DDAF8F1504F555CD162B512 /* ProviderTaxing2018.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderTaxing2018.swift; sourceTree = "<group>"; };
@@ -325,6 +344,7 @@
 		8DDAF90C97A6482DCF5A09E4 /* HistoryConstSalary2020.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryConstSalary2020.swift; sourceTree = "<group>"; };
 		8DDAF920885AA9B771B73B1B /* ProviderSocial2011.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderSocial2011.swift; sourceTree = "<group>"; };
 		8DDAF9251474EE436CECA819 /* IPropsSalary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPropsSalary.swift; sourceTree = "<group>"; };
+		8DDAF92D4B3FD3F51228CC4B /* Service_Legalios_Example_04_Taxing_12_FactorTaxRate2Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service_Legalios_Example_04_Taxing_12_FactorTaxRate2Test.swift; sourceTree = "<group>"; };
 		8DDAF93B9E17FAAEC9BB30EC /* FactorySocial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactorySocial.swift; sourceTree = "<group>"; };
 		8DDAF9468A4F70F431FB966E /* IProviderSocial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IProviderSocial.swift; sourceTree = "<group>"; };
 		8DDAF97E38D6F1BA2EEB7FB2 /* Service_Legalios_Example_04_Taxing_01_AllowancePayerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service_Legalios_Example_04_Taxing_01_AllowancePayerTest.swift; sourceTree = "<group>"; };
@@ -332,7 +352,7 @@
 		8DDAF9C5D905E454F5702BA3 /* Service_Legalios_Example_04_Taxing_07_AllowanceChild2ndTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service_Legalios_Example_04_Taxing_07_AllowanceChild2ndTest.swift; sourceTree = "<group>"; };
 		8DDAF9E2E595B8E7246D0E0C /* IPropsTaxing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPropsTaxing.swift; sourceTree = "<group>"; };
 		8DDAF9EE1F7634CEA7FD67D4 /* IPeriod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPeriod.swift; sourceTree = "<group>"; };
-		8DDAF9EE511C908B1E84E649 /* Service_Legalios_Example_04_Taxing_19_MarginIncomeOfWthAgrTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service_Legalios_Example_04_Taxing_19_MarginIncomeOfWthAgrTest.swift; sourceTree = "<group>"; };
+		8DDAF9EE511C908B1E84E649 /* Service_Legalios_Example_04_Taxing_21_MarginIncomeOfWthAgrTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service_Legalios_Example_04_Taxing_21_MarginIncomeOfWthAgrTest.swift; sourceTree = "<group>"; };
 		8DDAFA0759D4C387D4D14A72 /* HistoryConstHealth2017.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryConstHealth2017.swift; sourceTree = "<group>"; };
 		8DDAFA3CEC6B1C1B495DDB6A /* ProviderSocial2014.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderSocial2014.swift; sourceTree = "<group>"; };
 		8DDAFA47FEE1BE3736A13B6D /* IBundleBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IBundleBuilder.swift; sourceTree = "<group>"; };
@@ -378,7 +398,7 @@
 		8DDAFDFC8A044478402DD443 /* FactorySalary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactorySalary.swift; sourceTree = "<group>"; };
 		8DDAFDFD4B4054B7F97DC9A9 /* Service_Legalios_Example_02_Salary_01_WorkingShiftWeekTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service_Legalios_Example_02_Salary_01_WorkingShiftWeekTest.swift; sourceTree = "<group>"; };
 		8DDAFE0D1EE575B735B4DF06 /* IPropsSocial.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IPropsSocial.swift; sourceTree = "<group>"; };
-		8DDAFE2AB3159B5D84B4851A /* Service_Legalios_Example_04_Taxing_18_MarginIncomeOfWthEmpTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service_Legalios_Example_04_Taxing_18_MarginIncomeOfWthEmpTest.swift; sourceTree = "<group>"; };
+		8DDAFE2AB3159B5D84B4851A /* Service_Legalios_Example_04_Taxing_20_MarginIncomeOfWthEmpTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service_Legalios_Example_04_Taxing_20_MarginIncomeOfWthEmpTest.swift; sourceTree = "<group>"; };
 		8DDAFE450A8DBB61D543500F /* ProviderSocial2021.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderSocial2021.swift; sourceTree = "<group>"; };
 		8DDAFE59F782C5292DF7BFEE /* HistoryConstSocial2016.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryConstSocial2016.swift; sourceTree = "<group>"; };
 		8DDAFE5E3270E4DC835051F7 /* ProviderFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderFactory.swift; sourceTree = "<group>"; };
@@ -400,10 +420,10 @@
 		8DDAFF8013C58DCB50C9BEF6 /* FactoryTaxingTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactoryTaxingTest.swift; sourceTree = "<group>"; };
 		8DDAFF82327C0270198F5AD3 /* ProviderTaxing2014.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderTaxing2014.swift; sourceTree = "<group>"; };
 		8DDAFF8C7F3771B596E362A8 /* Service_Legalios_Example_02_Salary_03_MinMonthlyWageTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service_Legalios_Example_02_Salary_03_MinMonthlyWageTest.swift; sourceTree = "<group>"; };
-		8DDAFF9343CF7E297C920E50 /* Service_Legalios_Example_04_Taxing_15_MarginIncomeOfRoundingTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service_Legalios_Example_04_Taxing_15_MarginIncomeOfRoundingTest.swift; sourceTree = "<group>"; };
+		8DDAFF9343CF7E297C920E50 /* Service_Legalios_Example_04_Taxing_16_MarginIncomeOfRoundingTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service_Legalios_Example_04_Taxing_16_MarginIncomeOfRoundingTest.swift; sourceTree = "<group>"; };
 		8DDAFFA170D545A534737309 /* HistoryConstSocial2018.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryConstSocial2018.swift; sourceTree = "<group>"; };
 		8DDAFFE865FC2FFFA9350FEE /* ProviderSalary2011.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderSalary2011.swift; sourceTree = "<group>"; };
-		8DDAFFF08DD09CC05C092536 /* Service_Legalios_Example_04_Taxing_12_MinAmountOfTaxBonusTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service_Legalios_Example_04_Taxing_12_MinAmountOfTaxBonusTest.swift; sourceTree = "<group>"; };
+		8DDAFFF08DD09CC05C092536 /* Service_Legalios_Example_04_Taxing_13_MinAmountOfTaxBonusTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service_Legalios_Example_04_Taxing_13_MinAmountOfTaxBonusTest.swift; sourceTree = "<group>"; };
 		8DDAFFF6473C6196C8DA6097 /* ProviderTaxing2017.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProviderTaxing2017.swift; sourceTree = "<group>"; };
 		B90DE5543998530A7911F5A5 /* Pods-legalios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-legalios.release.xcconfig"; path = "Target Support Files/Pods-legalios/Pods-legalios.release.xcconfig"; sourceTree = "<group>"; };
 		BF9A6DC34D95D43214C784F4 /* Pods-legalios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-legalios.debug.xcconfig"; path = "Target Support Files/Pods-legalios/Pods-legalios.debug.xcconfig"; sourceTree = "<group>"; };
@@ -458,6 +478,14 @@
 				8DDAF7CABB380933AFB1F546 /* HistoryConstTaxing2012.swift */,
 			);
 			path = providers.period2012;
+			sourceTree = "<group>";
+		};
+		8DDAF0C98CFFB426D12392DC /* history */ = {
+			isa = PBXGroup;
+			children = (
+				8DDAF358A917E46037440558 /* FactoriesHistoryTest.swift */,
+			);
+			path = history;
 			sourceTree = "<group>";
 		};
 		8DDAF0FB222D21291F5EBEB0 /* providers.period2014 */ = {
@@ -671,8 +699,23 @@
 			children = (
 				8DDAFD22454CFE134D7B9689 /* Period.swift */,
 				8DDAFB197684450D50BF78CB /* VersionId.swift */,
+				8DDAF323B5ACCB44B61C1D18 /* BundleProps.swift */,
+				8DDAF3DC595BA391D0E3E613 /* OperationsRound.swift */,
+				8DDAF1AAD48507380A1871C0 /* OperationsDec.swift */,
+				8DDAF227098E94DBEC00F250 /* OperationsPeriod.swift */,
+				8DDAF3DD5D0E9BF8BAC69180 /* ContractTerms.swift */,
+				8DDAF88B9569E19907BAB1C0 /* TaxingOptions.swift */,
 			);
 			path = service_types;
+			sourceTree = "<group>";
+		};
+		8DDAF895E5A63CF3DE0AFB0F /* operations */ = {
+			isa = PBXGroup;
+			children = (
+				8DDAF4142C2D0EBAF2D41CE5 /* DecRoundingTest.swift */,
+				8DDAF42153C9505019243EBE /* SalaryRoundingTest.swift */,
+			);
+			path = operations;
 			sourceTree = "<group>";
 		};
 		8DDAF99285B67BBFB36B8160 /* legaliosTests */ = {
@@ -681,6 +724,8 @@
 				8DDAF54FB1D418240FF29A46 /* protokol */,
 				8DDAFBBD59D709879F779896 /* service */,
 				8DDAFE82046F3FA88EADD68E /* factories */,
+				8DDAF0C98CFFB426D12392DC /* history */,
+				8DDAF895E5A63CF3DE0AFB0F /* operations */,
 			);
 			path = legaliosTests;
 			sourceTree = "<group>";
@@ -703,7 +748,6 @@
 		8DDAFB8329ABB696484B4F57 /* factories */ = {
 			isa = PBXGroup;
 			children = (
-				8DDAF2B700ECC778EC5E0B74 /* BundleProps.swift */,
 				8DDAF219EADEFCC1175F0914 /* BundleBuilder.swift */,
 				8DDAF0E9124AD550EE2C6DE4 /* FactoryHealth.swift */,
 				8DDAFDFC8A044478402DD443 /* FactorySalary.swift */,
@@ -720,7 +764,7 @@
 			isa = PBXGroup;
 			children = (
 				8DDAFCEBD4DDE716F68D4BE4 /* Service_Legalios_Example_BaseTest.swift */,
-				8DDAF678F8A1FD22C3618CFB /* Service_Legalios_Example_BundleFailure2010Test.swift */,
+				8DDAF678F8A1FD22C3618CFB /* Service_Legalios_Example_BundleFailure2009Test.swift */,
 				8DDAFC1040720B3D0269E8CC /* Service_Legalios_Example_02_Salary_04_MinHourlyWageTest.swift */,
 				8DDAF64CE9164A60CD12D50E /* Service_Legalios_Example_01_Health_05_FactorCompoundTest.swift */,
 				8DDAF8015C6FC843723704BB /* Service_Legalios_Example_01_Health_06_FactorEmployeeTest.swift */,
@@ -749,17 +793,19 @@
 				8DDAF0ED8DB79B33DA347EE4 /* Service_Legalios_Example_04_Taxing_06_AllowanceChild1stTest.swift */,
 				8DDAF9C5D905E454F5702BA3 /* Service_Legalios_Example_04_Taxing_07_AllowanceChild2ndTest.swift */,
 				8DDAFB96659DA7B315265E32 /* Service_Legalios_Example_04_Taxing_08_AllowanceChild3rdTest.swift */,
-				8DDAFFF08DD09CC05C092536 /* Service_Legalios_Example_04_Taxing_12_MinAmountOfTaxBonusTest.swift */,
-				8DDAF80EFFDA5D162ABF0E9D /* Service_Legalios_Example_04_Taxing_13_MaxAmountOfTaxBonusTest.swift */,
+				8DDAFFF08DD09CC05C092536 /* Service_Legalios_Example_04_Taxing_13_MinAmountOfTaxBonusTest.swift */,
+				8DDAF80EFFDA5D162ABF0E9D /* Service_Legalios_Example_04_Taxing_14_MaxAmountOfTaxBonusTest.swift */,
 				8DDAF3AA1085F755A4DB2A4B /* Service_Legalios_Example_03_Social_03_FactorEmployerHigherTest.swift */,
 				8DDAFA7514139B078D6EF84D /* Service_Legalios_Example_03_Social_05_FactorEmployeeGarantTest.swift */,
 				8DDAFF10CFC599AAF90F3203 /* Service_Legalios_Example_03_Social_06_FactorEmployeeReduceTest.swift */,
-				8DDAFE2AB3159B5D84B4851A /* Service_Legalios_Example_04_Taxing_18_MarginIncomeOfWthEmpTest.swift */,
-				8DDAF9EE511C908B1E84E649 /* Service_Legalios_Example_04_Taxing_19_MarginIncomeOfWthAgrTest.swift */,
-				8DDAF84CDE4D380882F99ACF /* Service_Legalios_Example_04_Taxing_14_MarginIncomeOfTaxBonusTest.swift */,
-				8DDAFF9343CF7E297C920E50 /* Service_Legalios_Example_04_Taxing_15_MarginIncomeOfRoundingTest.swift */,
-				8DDAF1A17BA0114432DCB2EF /* Service_Legalios_Example_04_Taxing_16_MarginIncomeOfWithholdTest.swift */,
-				8DDAF56D5A29356E0969375B /* Service_Legalios_Example_04_Taxing_17_MarginIncomeOfSolitaryTest.swift */,
+				8DDAFE2AB3159B5D84B4851A /* Service_Legalios_Example_04_Taxing_20_MarginIncomeOfWthEmpTest.swift */,
+				8DDAF9EE511C908B1E84E649 /* Service_Legalios_Example_04_Taxing_21_MarginIncomeOfWthAgrTest.swift */,
+				8DDAF84CDE4D380882F99ACF /* Service_Legalios_Example_04_Taxing_15_MarginIncomeOfTaxBonusTest.swift */,
+				8DDAFF9343CF7E297C920E50 /* Service_Legalios_Example_04_Taxing_16_MarginIncomeOfRoundingTest.swift */,
+				8DDAF1A17BA0114432DCB2EF /* Service_Legalios_Example_04_Taxing_17_MarginIncomeOfWithholdTest.swift */,
+				8DDAF56D5A29356E0969375B /* Service_Legalios_Example_04_Taxing_18_MarginIncomeOfSolitaryTest.swift */,
+				8DDAF92D4B3FD3F51228CC4B /* Service_Legalios_Example_04_Taxing_12_FactorTaxRate2Test.swift */,
+				8DDAF5EE83AA6BE8114E4100 /* Service_Legalios_Example_04_Taxing_19_MarginIncomeOfTaxRate2Test.swift */,
 			);
 			path = service;
 			sourceTree = "<group>";
@@ -1020,7 +1066,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8DDAFFB22DFF79F44E5119F8 /* BundleProps.swift in Sources */,
 				8DDAF5E9C9866BCB44A35DAA /* BundleBuilder.swift in Sources */,
 				8DDAFFE105962083FF0D56A6 /* FactoryHealth.swift in Sources */,
 				8DDAF9E09F70FD74F7A4697A /* FactorySalary.swift in Sources */,
@@ -1153,6 +1198,12 @@
 				8DDAF4AB85F5131CCE04A668 /* IPropsTaxing.swift in Sources */,
 				8DDAF35516CE2413C173E7E5 /* Period.swift in Sources */,
 				8DDAF731E0E22737C7F59111 /* VersionId.swift in Sources */,
+				8DDAF6908A8D4C3C4035D923 /* BundleProps.swift in Sources */,
+				8DDAFD495A88973608F34FA2 /* OperationsRound.swift in Sources */,
+				8DDAFC1EDF0E4D418D911F8C /* OperationsDec.swift in Sources */,
+				8DDAFDB31B18C54AC71D6B12 /* OperationsPeriod.swift in Sources */,
+				8DDAF2B02A41ECE280C11D8D /* ContractTerms.swift in Sources */,
+				8DDAF8ACAFD44E774ABE1AA7 /* TaxingOptions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1170,7 +1221,7 @@
 				8DDAFB613B3958713ED0E5C1 /* ProtokolSocialBaseTest.swift in Sources */,
 				8DDAF61FE9C4524588825A38 /* ProtokolTaxingBaseTest.swift in Sources */,
 				8DDAF19BAA7CC6E9C0EA50BC /* Service_Legalios_Example_BaseTest.swift in Sources */,
-				8DDAFF04E2F16A6B09B4CFA3 /* Service_Legalios_Example_BundleFailure2010Test.swift in Sources */,
+				8DDAFF04E2F16A6B09B4CFA3 /* Service_Legalios_Example_BundleFailure2009Test.swift in Sources */,
 				8DDAF405DCB912CF045C4506 /* Service_Legalios_Example_02_Salary_04_MinHourlyWageTest.swift in Sources */,
 				8DDAF2D5311787A2AB15CA60 /* Service_Legalios_Example_01_Health_05_FactorCompoundTest.swift in Sources */,
 				8DDAF89E89C1D45AD293B05F /* Service_Legalios_Example_01_Health_06_FactorEmployeeTest.swift in Sources */,
@@ -1199,21 +1250,26 @@
 				8DDAF5AA21AAE8B518F56280 /* Service_Legalios_Example_04_Taxing_06_AllowanceChild1stTest.swift in Sources */,
 				8DDAFBEFEEDB7E8E3E959E93 /* Service_Legalios_Example_04_Taxing_07_AllowanceChild2ndTest.swift in Sources */,
 				8DDAF65F1572F9AFEAEA68D5 /* Service_Legalios_Example_04_Taxing_08_AllowanceChild3rdTest.swift in Sources */,
-				8DDAF9BAE8FDDDB7410A3230 /* Service_Legalios_Example_04_Taxing_12_MinAmountOfTaxBonusTest.swift in Sources */,
-				8DDAF63129C48053A6D8230E /* Service_Legalios_Example_04_Taxing_13_MaxAmountOfTaxBonusTest.swift in Sources */,
+				8DDAF9BAE8FDDDB7410A3230 /* Service_Legalios_Example_04_Taxing_13_MinAmountOfTaxBonusTest.swift in Sources */,
+				8DDAF63129C48053A6D8230E /* Service_Legalios_Example_04_Taxing_14_MaxAmountOfTaxBonusTest.swift in Sources */,
 				8DDAF4F95F29A612DFD524D5 /* Service_Legalios_Example_03_Social_03_FactorEmployerHigherTest.swift in Sources */,
 				8DDAF3F351528BADBCB7BFA1 /* Service_Legalios_Example_03_Social_05_FactorEmployeeGarantTest.swift in Sources */,
 				8DDAF4A08A918B5277A1EBF8 /* Service_Legalios_Example_03_Social_06_FactorEmployeeReduceTest.swift in Sources */,
-				8DDAF83CFE681D601A55FCE7 /* Service_Legalios_Example_04_Taxing_18_MarginIncomeOfWthEmpTest.swift in Sources */,
-				8DDAFA90D2FAC6EF525BDE66 /* Service_Legalios_Example_04_Taxing_19_MarginIncomeOfWthAgrTest.swift in Sources */,
-				8DDAFF0321ED813B127E5C1F /* Service_Legalios_Example_04_Taxing_14_MarginIncomeOfTaxBonusTest.swift in Sources */,
-				8DDAFADCF33DE342DAC526E2 /* Service_Legalios_Example_04_Taxing_15_MarginIncomeOfRoundingTest.swift in Sources */,
-				8DDAF7A581142D54DE0676F9 /* Service_Legalios_Example_04_Taxing_16_MarginIncomeOfWithholdTest.swift in Sources */,
-				8DDAF4689BEB83925C3FE4B0 /* Service_Legalios_Example_04_Taxing_17_MarginIncomeOfSolitaryTest.swift in Sources */,
+				8DDAF83CFE681D601A55FCE7 /* Service_Legalios_Example_04_Taxing_20_MarginIncomeOfWthEmpTest.swift in Sources */,
+				8DDAFA90D2FAC6EF525BDE66 /* Service_Legalios_Example_04_Taxing_21_MarginIncomeOfWthAgrTest.swift in Sources */,
+				8DDAFF0321ED813B127E5C1F /* Service_Legalios_Example_04_Taxing_15_MarginIncomeOfTaxBonusTest.swift in Sources */,
+				8DDAFADCF33DE342DAC526E2 /* Service_Legalios_Example_04_Taxing_16_MarginIncomeOfRoundingTest.swift in Sources */,
+				8DDAF7A581142D54DE0676F9 /* Service_Legalios_Example_04_Taxing_17_MarginIncomeOfWithholdTest.swift in Sources */,
+				8DDAF4689BEB83925C3FE4B0 /* Service_Legalios_Example_04_Taxing_18_MarginIncomeOfSolitaryTest.swift in Sources */,
 				8DDAFB94237B64BF661F0D41 /* FactoryHealthTest.swift in Sources */,
 				8DDAF3E1BEFBFF604C61FCD2 /* FactorySalaryTest.swift in Sources */,
 				8DDAFE21D684B58768AD87F1 /* FactorySocialTest.swift in Sources */,
 				8DDAFFBF28E3A6A8531F73F0 /* FactoryTaxingTest.swift in Sources */,
+				8DDAF9D1C8A2600EC8BDFAA6 /* Service_Legalios_Example_04_Taxing_12_FactorTaxRate2Test.swift in Sources */,
+				8DDAFDF703BFA215CB480B55 /* Service_Legalios_Example_04_Taxing_19_MarginIncomeOfTaxRate2Test.swift in Sources */,
+				8DDAF562EDB2C6913D44C234 /* FactoriesHistoryTest.swift in Sources */,
+				8DDAF2609CED42699B7ECAC1 /* DecRoundingTest.swift in Sources */,
+				8DDAF30D507AFAA8C960F49C /* SalaryRoundingTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

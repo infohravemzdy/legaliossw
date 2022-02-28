@@ -22,7 +22,7 @@
 //
 // FACTOR_WITHHOLD                  Sazba daně na srážkový příjem
 //
-// FACTOR_SOLITARY                  Sazba daně na solidární zvýšení
+// FACTOR_SOLIDARY                  Sazba daně na solidární zvýšení
 //
 // MIN_AMOUNT_OF_TAXBONUS           Minimální částka pro daňový bonus
 //
@@ -34,7 +34,7 @@
 //
 // MARGIN_INCOME_OF_WITHHOLD        Maximální výše příjmu pro srážkový příjem
 //
-// MARGIN_INCOME_OF_SOLITARY        Minimální výše příjmu pro solidární zvýšení daně
+// MARGIN_INCOME_OF_SOLIDARY        Minimální výše příjmu pro solidární zvýšení daně
 //
 // MARGIN_INCOME_OF_WHT_AGR         hranice příjmu pro srážkovou daň pro zaměstnace v pracovním poměru (nepodepsal prohlášení)
 //
@@ -61,13 +61,13 @@ struct HistoryConstTaxing2019
     static let ALLOWANCE_CHILD_3RD: Int32 = HistoryConstTaxing2018.ALLOWANCE_CHILD_3RD
     static let FACTOR_ADVANCES: Decimal = HistoryConstTaxing2018.FACTOR_ADVANCES
     static let FACTOR_WITHHOLD: Decimal = HistoryConstTaxing2018.FACTOR_WITHHOLD
-    static let FACTOR_SOLITARY: Decimal = HistoryConstTaxing2018.FACTOR_SOLITARY
+    static let FACTOR_SOLIDARY: Decimal = HistoryConstTaxing2018.FACTOR_SOLIDARY
     static let MIN_AMOUNT_OF_TAXBONUS: Int32 = HistoryConstTaxing2018.MIN_AMOUNT_OF_TAXBONUS
     static let MAX_AMOUNT_OF_TAXBONUS: Int32 = HistoryConstTaxing2018.MAX_AMOUNT_OF_TAXBONUS
     static let MARGIN_INCOME_OF_TAXBONUS: Int32 = (HistoryConstSalary2019.MIN_MONTHLY_WAGE / 2)
     static let MARGIN_INCOME_OF_ROUNDING: Int32 = HistoryConstTaxing2018.MARGIN_INCOME_OF_ROUNDING
     static let MARGIN_INCOME_OF_WITHHOLD: Int32 = HistoryConstTaxing2018.MARGIN_INCOME_OF_WITHHOLD
-    static let MARGIN_INCOME_OF_SOLITARY: Int32 = (4 * 32699)
+    static let MARGIN_INCOME_OF_SOLIDARY: Int32 = (4 * 32699)
     static let MARGIN_INCOME_OF_WHT_EMP: Int32 = HistoryConstTaxing2018.MARGIN_INCOME_OF_WHT_EMP
     static let MARGIN_INCOME_OF_WHT_AGR: Int32 = HistoryConstTaxing2018.MARGIN_INCOME_OF_WHT_AGR
 }
