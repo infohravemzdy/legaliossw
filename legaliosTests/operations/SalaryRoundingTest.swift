@@ -77,7 +77,7 @@ class SalaryRoundingTest : QuickSpec {
 
                     let _sut = PropsSalary.empty()
 
-                    var decimalRounds = _sut.hoursToHalfHoursUp(decimalTarget)
+                    let decimalRounds = _sut.hoursToHalfHoursUp(hoursValue: decimalTarget)
 
                     it("rounding value should equal \(testResult)") {
                         expect(decimalRounds).to(equal(decimalResult))
@@ -177,7 +177,7 @@ class SalaryRoundingTest : QuickSpec {
 
                     let _sut = PropsSalary.empty()
 
-                    var decimalRounds = _sut.hoursToQuartHoursUp(decimalTarget)
+                    let decimalRounds = _sut.hoursToQuartHoursUp(hoursValue: decimalTarget)
 
                     it("rounding value should equal \(testResult)") {
                         expect(decimalRounds).to(equal(decimalResult))
@@ -257,7 +257,7 @@ class SalaryRoundingTest : QuickSpec {
 
                     let _sut = PropsSalary.empty()
 
-                    var decimalRounds = _sut.hoursToHalfHoursDown(decimalTarget)
+                    let decimalRounds = _sut.hoursToHalfHoursDown(hoursValue: decimalTarget)
 
                     it("rounding value should equal \(testResult)") {
                         expect(decimalRounds).to(equal(decimalResult))
@@ -357,7 +357,7 @@ class SalaryRoundingTest : QuickSpec {
 
                     let _sut = PropsSalary.empty()
 
-                    var decimalRounds = _sut.hoursToQuartHoursDown(decimalTarget)
+                    let decimalRounds = _sut.hoursToQuartHoursDown(hoursValue: decimalTarget)
 
                     it("rounding value should equal \(testResult)") {
                         expect(decimalRounds).to(equal(decimalResult))
@@ -437,7 +437,7 @@ class SalaryRoundingTest : QuickSpec {
 
                     let _sut = PropsSalary.empty()
 
-                    var decimalRounds = _sut.hoursToHalfHoursNorm(decimalTarget)
+                    let decimalRounds = _sut.hoursToHalfHoursNorm(hoursValue: decimalTarget)
 
                     it("rounding value should equal \(testResult)") {
                         expect(decimalRounds).to(equal(decimalResult))
@@ -537,7 +537,7 @@ class SalaryRoundingTest : QuickSpec {
 
                     let _sut = PropsSalary.empty()
 
-                    var decimalRounds = _sut.hoursToQuartHoursNorm(decimalTarget)
+                    let decimalRounds = _sut.hoursToQuartHoursNorm(hoursValue: decimalTarget)
 
                     it("rounding value should equal \(testResult)") {
                         expect(decimalRounds).to(equal(decimalResult))
@@ -577,7 +577,7 @@ class SalaryRoundingTest : QuickSpec {
 
                     let _sut = PropsSalary.empty()
 
-                    var decimalRounds = _sut.moneyToRoundDown(decimalTarget)
+                    let decimalRounds = _sut.moneyToRoundDown(moneyValue: decimalTarget)
 
                     it("rounding value should equal \(testResult)") {
                         expect(decimalRounds).to(equal(decimalResult))
@@ -617,7 +617,7 @@ class SalaryRoundingTest : QuickSpec {
 
                     let _sut = PropsSalary.empty()
 
-                    var decimalRounds = _sut.moneyToRoundUp(decimalTarget)
+                    let decimalRounds = _sut.moneyToRoundUp(moneyValue: decimalTarget)
 
                     it("rounding value should equal \(testResult)") {
                         expect(decimalRounds).to(equal(decimalResult))
@@ -657,7 +657,7 @@ class SalaryRoundingTest : QuickSpec {
 
                     let _sut = PropsSalary.empty()
 
-                    var decimalRounds = _sut.moneyToRoundNorm(decimalTarget)
+                    let decimalRounds = _sut.moneyToRoundNorm(moneyValue: decimalTarget)
 
                     it("rounding value should equal \(testResult)") {
                         expect(decimalRounds).to(equal(decimalResult))

@@ -35,6 +35,7 @@ func exportPropsDecLine<B : ProviderFactory<P, ProviderSocial>, P : IPropsSocial
 }
 
 func exportPropsIntFile<B : ProviderFactory<P, ProviderSocial>, P : IPropsSocial>(fileName : String, minYear: Int16, maxYear: Int16, sut: B, function: (P) -> Int32) {
+    #if __PROTOKOL_TEST_FILE__
     do {
         let testProtokol = try createProtokolFile(fileName: fileName)
 
@@ -45,13 +46,15 @@ func exportPropsIntFile<B : ProviderFactory<P, ProviderSocial>, P : IPropsSocial
                     testYear: testYear, sut: sut, function: function)
         }
 
-        exportPropsClose(protokol: testProtokol)
+        closeProtokolFile(protokol: testProtokol)
     } catch let loggerError {
         print("Error: \(loggerError)".utf8)
     }
+    #endif
 }
 
 func exportPropsDecFile<B : ProviderFactory<P, ProviderSocial>, P : IPropsSocial>(fileName : String, minYear: Int16, maxYear: Int16, sut: B, function: (P) -> Decimal) {
+    #if __PROTOKOL_TEST_FILE__
     do {
         let testProtokol = try createProtokolFile(fileName: fileName)
 
@@ -62,8 +65,9 @@ func exportPropsDecFile<B : ProviderFactory<P, ProviderSocial>, P : IPropsSocial
                     testYear: testYear, sut: sut, function: function)
         }
 
-        exportPropsClose(protokol: testProtokol)
+        closeProtokolFile(protokol: testProtokol)
     } catch let loggerError {
         print("Error: \(loggerError)".utf8)
     }
+    #endif
 }

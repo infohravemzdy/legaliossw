@@ -11,8 +11,6 @@ import Nimble
 #if __PROTOKOL_TEST_FILE__
 class ProtokolSalaryTest: QuickSpec {
     override func spec() {
-        let PROTOKOL_TEST_FOLDER = "proj_hmgit/payrollsw/test_values"
-
         describe("GetProps_ShouldExport_WorkingShiftWeek") {
             let test_examples: [(title: String, minYear: Int16, maxYear: Int16)] = [
                 ("2010-2022", 2010, 2022),

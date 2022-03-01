@@ -99,7 +99,7 @@ class OperationsRound {
         return roundToInt(dividRet)
     }
 
-    public static func decRoundUp(_ valueDec: Decimal) -> Decimal {
+    static func decRoundUp(_ valueDec: Decimal) -> Decimal {
         var roundInp = abs(valueDec)
         var roundRet = Decimal()
         NSDecimalRound(&roundRet, &roundInp, 0, NSDecimalNumber.RoundingMode.up)

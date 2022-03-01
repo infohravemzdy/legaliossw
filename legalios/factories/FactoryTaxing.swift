@@ -10,6 +10,7 @@ class FactoryTaxing : ProviderFactory<PropsTaxing, ProviderTaxing> {
                 defaultProvider: ProviderTaxing2022(),
                 emptyPeriodProps: PropsTaxing.empty(),
                 versions: [
+                    HistoryConstTaxing2010.VERSION_CODE:ProviderTaxing2010(),
                     HistoryConstTaxing2011.VERSION_CODE:ProviderTaxing2011(),
                     HistoryConstTaxing2012.VERSION_CODE:ProviderTaxing2012(),
                     HistoryConstTaxing2013.VERSION_CODE:ProviderTaxing2013(),

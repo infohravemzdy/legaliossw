@@ -13,7 +13,7 @@ class OperationsPeriod {
 
         let userCalendar = Calendar.current
 
-        let dateItem = userCalendar.date(from: dateComponents); <#default value#>
+        let dateItem: Date? = userCalendar.date(from: dateComponents)
 
         return dateItem!
     }
@@ -23,7 +23,7 @@ class OperationsPeriod {
     }
 
     func totalWeeksHours(template: Array<Int32>) -> Int32 {
-        var result: Int32 = template.enumerated().reduce(Int32(0)) { (agr, x) in
+        let result: Int32 = template.enumerated().reduce(Int32(0)) { (agr, x) in
             if x.offset < 7 {
                 return agr + x.element
             }
@@ -32,7 +32,7 @@ class OperationsPeriod {
         return result
     }
     func totalMonthHours(template: Array<Int32>) -> Int32 {
-        var result: Int32 = template.enumerated().reduce(Int32(0)) { (agr, x) in
+        let result: Int32 = template.enumerated().reduce(Int32(0)) { (agr, x) in
             if x.offset < 31 {
                 return agr + x.element
             }
@@ -48,7 +48,7 @@ class OperationsPeriod {
         return Int16(range.count)
     }
     func dateOfMonth(period: IPeriod, dayOrdinal: Int16) -> Date {
-        var periodDay: Int16 = min(max(1, dayOrdinal), daysInMonth(period))
+        let periodDay: Int16 = min(max(1, dayOrdinal), daysInMonth(period))
 
         return newDate(year: period.year, month: period.month, day: periodDay)
     }
@@ -83,22 +83,22 @@ class OperationsPeriod {
 
         return dayOfWeekMonToSun(periodDateCwd: Int16(periodDateCwd))
     }
-    func dateFromInPeriod(period: IPeriod, dateFrom: Date) -> Int16 {
+    func dateFromInPeriod(period: IPeriod, dateFrom: Date?) -> Int16 {
         var dayTermFrom = OperationsPeriod.TERM_BEG_FINISHED
 
         let periodDateBeg = newDate(year: period.year, month: period.month, day: 1)
 
         if dateFrom != nil	{
-            dayTermFrom = Int16(Calendar.current.dateComponents([.day], from: dateFrom).day ?? Int(OperationsPeriod.TERM_BEG_FINISHED))
+            dayTermFrom = Int16(Calendar.current.dateComponents([.day], from: dateFrom!).day ?? Int(OperationsPeriod.TERM_BEG_FINISHED))
         }
 
-        if dateFrom == nil || dateFrom < periodDateBeg {
+        if dateFrom == nil || dateFrom! < periodDateBeg {
             dayTermFrom = 1
         }
         return dayTermFrom
     }
 
-    func dateStopInPeriod(period: IPeriod, dateEnds: Date) -> Int16 {
+    func dateStopInPeriod(period: IPeriod, dateEnds: Date?) -> Int16 {
         var dayTermEnd = OperationsPeriod.TERM_END_FINISHED
 
         let daysPeriod = daysInMonth(period)
@@ -106,10 +106,10 @@ class OperationsPeriod {
         let periodDateEnd = newDate(year: period.year, month: period.month, day: daysPeriod)
 
         if dateEnds != nil {
-            dayTermEnd = Int16(Calendar.current.dateComponents([.day], from: dateEnds).day ?? Int(OperationsPeriod.TERM_END_FINISHED))
+            dayTermEnd = Int16(Calendar.current.dateComponents([.day], from: dateEnds!).day ?? Int(OperationsPeriod.TERM_END_FINISHED))
         }
 
-        if dateEnds == nil || dateEnds > periodDateEnd {
+        if dateEnds == nil || dateEnds! > periodDateEnd {
             dayTermEnd = daysPeriod
         }
         return dayTermEnd
@@ -146,19 +146,19 @@ class OperationsPeriod {
 
         let periodBeginCwd = weekDayOfMonth(period: period, dayOrdinal: 1)
 
-        var monthSchedule: Array<Int32> = (1...periodDaysCount)
+        let monthSchedule: Array<Int32> = (1...periodDaysCount)
                 .map { x in secondsFromWeekSchedule(weekSchedule: weekSchedule, dayOrdinal: x, periodBeginCwd: periodBeginCwd) }
         return monthSchedule
     }
     func timesheetWorkSchedule(monthSchedule: Array<Int32>, dayTermFrom: Int16, dayTermStop: Int16) -> Array<Int32> {
-        var timeSheet: Array<Int32> = monthSchedule.enumerated()
+        let timeSheet: Array<Int32> = monthSchedule.enumerated()
                 .map { idx, x in hoursFromCalendar(dayTermFrom: dayTermFrom, dayTermStop: dayTermStop, dayIndex: Int16(idx), workSeconds: x) }
         return timeSheet
     }
     func timesheetWorkContract(monthContract: Array<Int32>, monthPosition: Array<Int32>, dayTermFrom: Int16, dayTermStop: Int16) -> Array<Int32> {
         let idxFrom = Int(dayTermFrom - 1)
         let idxStop = Int(dayTermStop - 1)
-        var result: Array<Int32> = zip(monthContract, monthPosition).enumerated().map { idx, x in
+        let result: Array<Int32> = zip(monthContract, monthPosition).enumerated().map { idx, x in
             var res: Int32 = 0
             if idx >= idxFrom && idx <= idxStop {
                 res = x.0 + x.1
@@ -199,7 +199,7 @@ class OperationsPeriod {
     func scheduleBaseSubtract(template: Array<Int32>, subtract: Array<Int32>, dayFrom: Int16, dayStop: Int16) -> Array<Int32> {
         let idxFrom = Int(dayFrom - 1)
         let idxStop = Int(dayStop - 1)
-        var result: Array<Int32> = zip(template, subtract).enumerated().map { idx, x in
+        let result: Array<Int32> = zip(template, subtract).enumerated().map { idx, x in
             var res: Int32 = 0
             if idx >= idxFrom && idx <= idxStop {
                 res = max(0, x.0 - x.1)

@@ -193,20 +193,6 @@ class Service_Legalios_Example_04_Taxing_19_MarginIncomeOfTaxRate2Test: QuickSpe
                 ( "2022-11", 2022, 11, 2022, 11, 155644 ),
                 ( "2022-12", 2022, 12, 2022, 12, 155644 ),
             ]),
-            ("2023", [
-                ( "2023-1", 2023, 1, 2023, 1, 155644 ),
-                ( "2023-2", 2023, 2, 2023, 2, 155644 ),
-                ( "2023-3", 2023, 3, 2023, 3, 155644 ),
-                ( "2023-4", 2023, 4, 2023, 4, 155644 ),
-                ( "2023-5", 2023, 5, 2023, 5, 155644 ),
-                ( "2023-6", 2023, 6, 2023, 6, 155644 ),
-                ( "2023-7", 2023, 7, 2023, 7, 155644 ),
-                ( "2023-8", 2023, 8, 2023, 8, 155644 ),
-                ( "2023-9", 2023, 9, 2023, 9, 155644 ),
-                ( "2023-10", 2023, 10, 2023, 10, 155644 ),
-                ( "2023-11", 2023, 11, 2023, 11, 155644 ),
-                ( "2023-12", 2023, 12, 2023, 12, 155644 ),
-            ]),
         ]
 #if __PROTOKOL_TEST_FILE__
         logTestIntExamples(fileName: "04_Taxing_19_MarginIncomeOfTaxRate2.txt", tx: test_examples)
@@ -247,7 +233,7 @@ class Service_Legalios_Example_04_Taxing_19_MarginIncomeOfTaxRate2Test: QuickSpe
                             expect(props).toNot(beNil())
                         }
                         it("GetProps should return value = \(expected)") {
-                            expect(props?.marginIncomeOfSolidary).to(equal(expected))
+                            expect(props?.marginIncomeOfTaxRate2).to(equal(expected))
                         }
                     }
                 }

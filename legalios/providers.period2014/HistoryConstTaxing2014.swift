@@ -24,6 +24,8 @@
 //
 // FACTOR_SOLIDARY                  Sazba daně na solidární zvýšení
 //
+// FACTOR_TAXRATE2                  Sazba daně pro druhé pásmo daně
+//
 // MIN_AMOUNT_OF_TAXBONUS           Minimální částka pro daňový bonus
 //
 // MAX_AMOUNT_OF_TAXBONUS           Maximální částka pro daňový bonus
@@ -35,6 +37,8 @@
 // MARGIN_INCOME_OF_WITHHOLD        Maximální výše příjmu pro srážkový příjem
 //
 // MARGIN_INCOME_OF_SOLIDARY        Minimální výše příjmu pro solidární zvýšení daně
+//
+// MARGIN_INCOME_OF_TAXRATE2        Minimální výše příjmu pro druhé pásmo daně
 //
 // MARGIN_INCOME_OF_WHT_AGR         hranice příjmu pro srážkovou daň pro zaměstnace v pracovním poměru (nepodepsal prohlášení)
 //
@@ -57,12 +61,14 @@ struct HistoryConstTaxing2014
     static let FACTOR_ADVANCES: Decimal = HistoryConstTaxing2013.FACTOR_ADVANCES
     static let FACTOR_WITHHOLD: Decimal = HistoryConstTaxing2013.FACTOR_WITHHOLD
     static let FACTOR_SOLIDARY: Decimal = HistoryConstTaxing2013.FACTOR_SOLIDARY
+    static let FACTOR_TAXRATE2: Decimal = HistoryConstTaxing2013.FACTOR_TAXRATE2
     static let MIN_AMOUNT_OF_TAXBONUS: Int32 = HistoryConstTaxing2013.MIN_AMOUNT_OF_TAXBONUS
     static let MAX_AMOUNT_OF_TAXBONUS: Int32 = HistoryConstTaxing2013.MAX_AMOUNT_OF_TAXBONUS
     static let MARGIN_INCOME_OF_TAXBONUS: Int32 = (HistoryConstSalary2014.MIN_MONTHLY_WAGE / 2)
     static let MARGIN_INCOME_OF_ROUNDING: Int32 = HistoryConstTaxing2013.MARGIN_INCOME_OF_ROUNDING
     static let MARGIN_INCOME_OF_WITHHOLD: Int32 = 0
     static let MARGIN_INCOME_OF_SOLIDARY: Int32 = (4 * 25942)
+    static let MARGIN_INCOME_OF_TAXRATE2: Int32 = HistoryConstTaxing2013.MARGIN_INCOME_OF_TAXRATE2
     static let MARGIN_INCOME_OF_WHT_EMP: Int32 = HistoryConstTaxing2013.MARGIN_INCOME_OF_WHT_EMP
     static let MARGIN_INCOME_OF_WHT_AGR: Int32 = 10000
 }

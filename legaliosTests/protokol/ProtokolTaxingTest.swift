@@ -246,7 +246,7 @@ class ProtokolTaxingTest: QuickSpec {
                     it("GetProps should export values") {
                         exportPropsDecFile(fileName: "04_Taxing_12_FactorTaxRate2.txt",
                                 minYear: minYear, maxYear: maxYear, sut: factory!,
-                                function: { prop in prop.factorSolidary })
+                                function: { prop in prop.factorTaxRate2 })
                     }
                 }
             }
@@ -386,7 +386,7 @@ class ProtokolTaxingTest: QuickSpec {
                     it("GetProps should export values") {
                         exportPropsIntFile(fileName: "04_Taxing_19_MarginIncomeOfTaxRate2.txt",
                                 minYear: minYear, maxYear: maxYear, sut: factory!,
-                                function: { prop in prop.marginIncomeOfSolidary })
+                                function: { prop in prop.marginIncomeOfTaxRate2 })
                     }
                 }
             }

@@ -39,7 +39,7 @@ func exportPropsStart(protokol: FileHandle) {
     protokol.write(Data("\n".utf8))
 }
 
-func exportPropsClose(protokol: FileHandle) {
+func closeProtokolFile(protokol: FileHandle) {
     protokol.closeFile()
 }
 

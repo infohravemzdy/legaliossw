@@ -30,10 +30,10 @@ class DecRoundingTest : QuickSpec {
             ]
             test_examples.forEach { (title: String, testTarget: String, testResult: String) in
                 describe("Rounding Value \(testTarget)") {
-                    var decimalTarget = Decimal(string: testTarget.replace(",", with: "."))!
-                    var decimalResult = Decimal(string: testResult.replace(",", with: "."))!
+                    let decimalTarget = Decimal(string: testTarget.replace(",", with: "."))!
+                    let decimalResult = Decimal(string: testResult.replace(",", with: "."))!
 
-                    var decimalRounds = OperationsRound.decRoundUp(decimalTarget)
+                    let decimalRounds = OperationsRound.decRoundUp(decimalTarget)
 
                     it("rounding value should equal \(testResult)") {
                         expect(decimalRounds).to(equal(decimalResult))
@@ -58,10 +58,10 @@ class DecRoundingTest : QuickSpec {
 
             test_examples.forEach { (title: String, testTarget: String, testResult: String) in
                 describe("Rounding Value \(testTarget)") {
-                    var decimalTarget = Decimal(string: testTarget.replace(",", with: "."))!
-                    var decimalResult = Decimal(string: testResult.replace(",", with: "."))!
+                    let decimalTarget = Decimal(string: testTarget.replace(",", with: "."))!
+                    let decimalResult = Decimal(string: testResult.replace(",", with: "."))!
 
-                    var decimalRounds = OperationsRound.decRoundDown(decimalTarget)
+                    let decimalRounds = OperationsRound.decRoundDown(decimalTarget)
 
                     it("rounding value should equal \(testResult)") {
                         expect(decimalRounds).to(equal(decimalResult))
@@ -86,10 +86,10 @@ class DecRoundingTest : QuickSpec {
 
             test_examples.forEach { (title: String, testTarget: String, testResult: String) in
                 describe("Rounding Value \(testTarget)") {
-                    var decimalTarget = Decimal(string: testTarget.replace(",", with: "."))!
-                    var decimalResult = Decimal(string: testResult.replace(",", with: "."))!
+                    let decimalTarget = Decimal(string: testTarget.replace(",", with: "."))!
+                    let decimalResult = Decimal(string: testResult.replace(",", with: "."))!
 
-                    var decimalRounds = OperationsRound.decRoundNorm(decimalTarget)
+                    let decimalRounds = OperationsRound.decRoundNorm(decimalTarget)
 
                     it("rounding value should equal \(testResult)") {
                         expect(decimalRounds).to(equal(decimalResult))
@@ -114,10 +114,10 @@ class DecRoundingTest : QuickSpec {
 
             test_examples.forEach { (title: String, testTarget: String, testResult: String) in
                 describe("Rounding Value \(testTarget)") {
-                    var decimalTarget = Decimal(string: testTarget.replace(",", with: "."))!
-                    var decimalResult = Decimal(string: testResult.replace(",", with: "."))!
+                    let decimalTarget = Decimal(string: testTarget.replace(",", with: "."))!
+                    let decimalResult = Decimal(string: testResult.replace(",", with: "."))!
 
-                    var decimalRounds = OperationsRound.decNearRoundUp(decimalTarget, nearest: 100)
+                    let decimalRounds = OperationsRound.decNearRoundUp(decimalTarget, nearest: 100)
 
                     it("rounding value should equal \(testResult)") {
                         expect(decimalRounds).to(equal(decimalResult))
@@ -142,10 +142,10 @@ class DecRoundingTest : QuickSpec {
 
             test_examples.forEach { (title: String, testTarget: String, testResult: String) in
                 describe("Rounding Value \(testTarget)") {
-                    var decimalTarget = Decimal(string: testTarget.replace(",", with: "."))!
-                    var decimalResult = Decimal(string: testResult.replace(",", with: "."))!
+                    let decimalTarget = Decimal(string: testTarget.replace(",", with: "."))!
+                    let decimalResult = Decimal(string: testResult.replace(",", with: "."))!
 
-                    var decimalRounds = OperationsRound.decNearRoundDown(decimalTarget, nearest: 100)
+                    let decimalRounds = OperationsRound.decNearRoundDown(decimalTarget, nearest: 100)
 
                     it("rounding value should equal \(testResult)") {
                         expect(decimalRounds).to(equal(decimalResult))
@@ -220,10 +220,10 @@ class DecRoundingTest : QuickSpec {
 
             test_examples.forEach { (title: String, testTarget: String, testResult: String) in
                 describe("Rounding Value \(testTarget)") {
-                    var decimalTarget = Decimal(string: testTarget.replace(",", with: "."))!
-                    var decimalResult = Decimal(string: testResult.replace(",", with: "."))!
+                    let decimalTarget = Decimal(string: testTarget.replace(",", with: "."))!
+                    let decimalResult = Decimal(string: testResult.replace(",", with: "."))!
 
-                    var decimalRounds = OperationsRound.decRoundUp50(decimalTarget)
+                    let decimalRounds = OperationsRound.decRoundUp50(decimalTarget)
 
                     it("rounding value should equal \(testResult)") {
                         expect(decimalRounds).to(equal(decimalResult))
@@ -318,10 +318,10 @@ class DecRoundingTest : QuickSpec {
 
             test_examples.forEach { (title: String, testTarget: String, testResult: String) in
                 describe("Rounding Value \(testTarget)") {
-                    var decimalTarget = Decimal(string: testTarget.replace(",", with: "."))!
-                    var decimalResult = Decimal(string: testResult.replace(",", with: "."))!
+                    let decimalTarget = Decimal(string: testTarget.replace(",", with: "."))!
+                    let decimalResult = Decimal(string: testResult.replace(",", with: "."))!
 
-                    var decimalRounds = OperationsRound.decRoundUp25(decimalTarget)
+                    let decimalRounds = OperationsRound.decRoundUp25(decimalTarget)
 
                     it("rounding value should equal \(testResult)") {
                         expect(decimalRounds).to(equal(decimalResult))
@@ -356,10 +356,10 @@ class DecRoundingTest : QuickSpec {
 
             test_examples.forEach { (title: String, testTarget: String, testResult: String) in
                 describe("Rounding Value \(testTarget)") {
-                    var decimalTarget = Decimal(string: testTarget.replace(",", with: "."))!
-                    var decimalResult = Decimal(string: testResult.replace(",", with: "."))!
+                    let decimalTarget = Decimal(string: testTarget.replace(",", with: "."))!
+                    let decimalResult = Decimal(string: testResult.replace(",", with: "."))!
 
-                    var decimalRounds = OperationsRound.decRoundUp01(decimalTarget)
+                    let decimalRounds = OperationsRound.decRoundUp01(decimalTarget)
 
                     it("rounding value should equal \(testResult)") {
                         expect(decimalRounds).to(equal(decimalResult))
@@ -434,10 +434,10 @@ class DecRoundingTest : QuickSpec {
 
             test_examples.forEach { (title: String, testTarget: String, testResult: String) in
                 describe("Rounding Value \(testTarget)") {
-                    var decimalTarget = Decimal(string: testTarget.replace(",", with: "."))!
-                    var decimalResult = Decimal(string: testResult.replace(",", with: "."))!
+                    let decimalTarget = Decimal(string: testTarget.replace(",", with: "."))!
+                    let decimalResult = Decimal(string: testResult.replace(",", with: "."))!
 
-                    var decimalRounds = OperationsRound.decRoundDown50(decimalTarget)
+                    let decimalRounds = OperationsRound.decRoundDown50(decimalTarget)
 
                     it("rounding value should equal \(testResult)") {
                         expect(decimalRounds).to(equal(decimalResult))
@@ -532,10 +532,10 @@ class DecRoundingTest : QuickSpec {
 
             test_examples.forEach { (title: String, testTarget: String, testResult: String) in
                 describe("Rounding Value \(testTarget)") {
-                    var decimalTarget = Decimal(string: testTarget.replace(",", with: "."))!
-                    var decimalResult = Decimal(string: testResult.replace(",", with: "."))!
+                    let decimalTarget = Decimal(string: testTarget.replace(",", with: "."))!
+                    let decimalResult = Decimal(string: testResult.replace(",", with: "."))!
 
-                    var decimalRounds = OperationsRound.decRoundDown25(decimalTarget)
+                    let decimalRounds = OperationsRound.decRoundDown25(decimalTarget)
 
                     it("rounding value should equal \(testResult)") {
                         expect(decimalRounds).to(equal(decimalResult))
@@ -570,10 +570,10 @@ class DecRoundingTest : QuickSpec {
 
             test_examples.forEach { (title: String, testTarget: String, testResult: String) in
                 describe("Rounding Value \(testTarget)") {
-                    var decimalTarget = Decimal(string: testTarget.replace(",", with: "."))!
-                    var decimalResult = Decimal(string: testResult.replace(",", with: "."))!
+                    let decimalTarget = Decimal(string: testTarget.replace(",", with: "."))!
+                    let decimalResult = Decimal(string: testResult.replace(",", with: "."))!
 
-                    var decimalRounds = OperationsRound.decRoundDown01(decimalTarget)
+                    let decimalRounds = OperationsRound.decRoundDown01(decimalTarget)
 
                     it("rounding value should equal \(testResult)") {
                         expect(decimalRounds).to(equal(decimalResult))
@@ -648,10 +648,10 @@ class DecRoundingTest : QuickSpec {
 
             test_examples.forEach { (title: String, testTarget: String, testResult: String) in
                 describe("Rounding Value \(testTarget)") {
-                    var decimalTarget = Decimal(string: testTarget.replace(",", with: "."))!
-                    var decimalResult = Decimal(string: testResult.replace(",", with: "."))!
+                    let decimalTarget = Decimal(string: testTarget.replace(",", with: "."))!
+                    let decimalResult = Decimal(string: testResult.replace(",", with: "."))!
 
-                    var decimalRounds = OperationsRound.decRoundNorm50(decimalTarget)
+                    let decimalRounds = OperationsRound.decRoundNorm50(decimalTarget)
 
                     it("rounding value should equal \(testResult)") {
                         expect(decimalRounds).to(equal(decimalResult))
@@ -746,10 +746,10 @@ class DecRoundingTest : QuickSpec {
 
             test_examples.forEach { (title: String, testTarget: String, testResult: String) in
                 describe("Rounding Value \(testTarget)") {
-                    var decimalTarget = Decimal(string: testTarget.replace(",", with: "."))!
-                    var decimalResult = Decimal(string: testResult.replace(",", with: "."))!
+                    let decimalTarget = Decimal(string: testTarget.replace(",", with: "."))!
+                    let decimalResult = Decimal(string: testResult.replace(",", with: "."))!
 
-                    var decimalRounds = OperationsRound.decRoundNorm25(decimalTarget)
+                    let decimalRounds = OperationsRound.decRoundNorm25(decimalTarget)
 
                     it("rounding value should equal \(testResult)") {
                         expect(decimalRounds).to(equal(decimalResult))
@@ -784,10 +784,10 @@ class DecRoundingTest : QuickSpec {
 
             test_examples.forEach { (title: String, testTarget: String, testResult: String) in
                 describe("Rounding Value \(testTarget)") {
-                    var decimalTarget = Decimal(string: testTarget.replace(",", with: "."))!
-                    var decimalResult = Decimal(string: testResult.replace(",", with: "."))!
+                    let decimalTarget = Decimal(string: testTarget.replace(",", with: "."))!
+                    let decimalResult = Decimal(string: testResult.replace(",", with: "."))!
 
-                    var decimalRounds = OperationsRound.decRoundNorm01(decimalTarget)
+                    let decimalRounds = OperationsRound.decRoundNorm01(decimalTarget)
 
                     it("rounding value should equal \(testResult)") {
                         expect(decimalRounds).to(equal(decimalResult))

@@ -35,6 +35,8 @@ class ProviderTaxing: ProviderBase, IProviderTaxing {
 
     func factorSolidary(_ period: IPeriod) -> Decimal {return Decimal.zero}
 
+    func factorTaxRate2(_ period: IPeriod) -> Decimal {return Decimal.zero}
+
     func minAmountOfTaxBonus(_ period: IPeriod) -> Int32  {return 0}
 
     func maxAmountOfTaxBonus(_ period: IPeriod) -> Int32  {return 0}
@@ -46,6 +48,8 @@ class ProviderTaxing: ProviderBase, IProviderTaxing {
     func marginIncomeOfWithhold(_ period: IPeriod) -> Int32  {return 0}
 
     func marginIncomeOfSolidary(_ period: IPeriod) -> Int32  {return 0}
+
+    func marginIncomeOfTaxRate2(_ period: IPeriod) -> Int32  {return 0}
 
     func marginIncomeOfWthEmp(_ period: IPeriod) -> Int32  {return 0}
 
