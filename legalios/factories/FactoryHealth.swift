@@ -4,7 +4,7 @@
 
 import Foundation
 
-class FactoryHealth : ProviderFactory<PropsHealth, ProviderHealth> {
+class FactoryHealth : ProviderFactory<PropsHealthBase, ProviderHealth> {
     init() {
         super.init(
                 defaultProvider: ProviderHealth2022(),

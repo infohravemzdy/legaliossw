@@ -4,7 +4,7 @@
 
 import Foundation
 
-class FactoryTaxing : ProviderFactory<PropsTaxing, ProviderTaxing> {
+class FactoryTaxing : ProviderFactory<PropsTaxingBase, ProviderTaxing> {
     init() {
         super.init(
                 defaultProvider: ProviderTaxing2022(),

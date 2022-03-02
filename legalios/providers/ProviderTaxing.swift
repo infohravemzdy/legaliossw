@@ -5,7 +5,7 @@
 import Foundation
 
 class ProviderTaxing: ProviderBase, IProviderTaxing {
-    typealias P = PropsTaxing
+    typealias P = PropsTaxingBase
 
     init(versionId: Int16) {
         super.init(versionId: VersionId.get(value: versionId))

@@ -4,7 +4,7 @@
 
 import Foundation
 
-class FactorySocial : ProviderFactory<PropsSocial, ProviderSocial> {
+class FactorySocial : ProviderFactory<PropsSocialBase, ProviderSocial> {
     init() {
         super.init(
                 defaultProvider: ProviderSocial2022(),
