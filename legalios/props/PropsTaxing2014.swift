@@ -4,29 +4,29 @@
 
 import Foundation
 
-class PropsTaxing : PropsTaxingBase {
+class PropsTaxing2014 : PropsTaxingBase {
     override init(version: VersionId,
-        allowancePayer: Int32,
-        allowanceDisab1st: Int32,
-        allowanceDisab2nd : Int32,
-        allowanceDisab3rd: Int32,
-        allowanceStudy: Int32,
-        allowanceChild1st: Int32,
-        allowanceChild2nd: Int32,
-        allowanceChild3rd: Int32,
-        factorAdvances: Decimal,
-        factorWithhold: Decimal,
-        factorSolidary: Decimal,
-        factorTaxRate2: Decimal,
-        minAmountOfTaxBonus: Int32,
-        maxAmountOfTaxBonus: Int32,
-        marginIncomeOfTaxBonus: Int32,
-        marginIncomeOfRounding: Int32,
-        marginIncomeOfWithhold: Int32,
-        marginIncomeOfSolidary: Int32,
-        marginIncomeOfTaxRate2: Int32,
-        marginIncomeOfWthEmp: Int32,
-        marginIncomeOfWthAgr: Int32) {
+         allowancePayer: Int32,
+         allowanceDisab1st: Int32,
+         allowanceDisab2nd : Int32,
+         allowanceDisab3rd: Int32,
+         allowanceStudy: Int32,
+         allowanceChild1st: Int32,
+         allowanceChild2nd: Int32,
+         allowanceChild3rd: Int32,
+         factorAdvances: Decimal,
+         factorWithhold: Decimal,
+         factorSolidary: Decimal,
+         factorTaxRate2: Decimal,
+         minAmountOfTaxBonus: Int32,
+         maxAmountOfTaxBonus: Int32,
+         marginIncomeOfTaxBonus: Int32,
+         marginIncomeOfRounding: Int32,
+         marginIncomeOfWithhold: Int32,
+         marginIncomeOfSolidary: Int32,
+         marginIncomeOfTaxRate2: Int32,
+         marginIncomeOfWthEmp: Int32,
+         marginIncomeOfWthAgr: Int32) {
 
         super.init(version: version,
                 allowancePayer: allowancePayer,
@@ -77,8 +77,8 @@ class PropsTaxing : PropsTaxingBase {
                 marginIncomeOfWthAgr: 0)
     }
 
-    static func empty() -> PropsTaxing {
-        return PropsTaxing(version: VERSION_ZERO)
+    static func empty() -> PropsTaxing2014 {
+        return PropsTaxing2014(version: VERSION_ZERO)
     }
 
     override func hasWithholdIncome(termOpt: WorkTaxingTerms, signOpt: TaxDeclSignOption, noneOpt: TaxNoneSignOption, incomeSum: Int32) -> Bool {
@@ -86,9 +86,8 @@ class PropsTaxing : PropsTaxingBase {
         // Tax income for advance from Year 2014 to Year 2017
         //*****************************************************************************
         // - withhold tax (non-signed declaration) and income
-        // if (period.Year >= 2018)
+        // if (period.Year >= 2014 && period.Year =< 2017)
         // -- income from DPP is less than X CZK
-        // -- income from low-income employment is less than X CZK
         // -- income from statutory employment and non-resident is always withhold tax
 
         var withholdIncome: Bool = false
@@ -110,16 +109,6 @@ class PropsTaxing : PropsTaxingBase {
                 }
             }
         }
-        else if (termOpt == WorkTaxingTerms.TaxingTermEmployments)
-        {
-            if (marginIncomeOfWthEmp == 0 || incomeSum <= marginIncomeOfWthEmp)
-            {
-                if (incomeSum > 0)
-                {
-                    withholdIncome = true
-                }
-            }
-        }
         else if (termOpt == WorkTaxingTerms.TaxingTermStatutPart)
         {
             if (incomeSum > 0)
@@ -132,29 +121,17 @@ class PropsTaxing : PropsTaxingBase {
 
     override func roundedAdvancesPaym(supersResult: Int32, basisResult: Int32) -> Int32 {
         let factorAdvances = OperationsDec.divide(factorAdvances, div: Decimal(integerLiteral: 100))
-        let factorTaxRate2 = OperationsDec.divide(factorTaxRate2, div: Decimal(integerLiteral: 100))
 
-        var taxRate1Basis: Int32 = basisResult
-        var taxRate2Basis: Int32 = 0
-        if (marginIncomeOfTaxRate2 != 0)
-        {
-            taxRate1Basis = min(basisResult, marginIncomeOfTaxRate2)
-            taxRate2Basis = max(0, basisResult - marginIncomeOfTaxRate2)
-        }
-        var taxRate1Taxing: Decimal = Decimal.zero
+        var advanceTaxing: Int32 = 0
         if (basisResult <= marginIncomeOfRounding)
         {
-            taxRate1Taxing = OperationsDec.multiply(Decimal(integerLiteral: Int(taxRate1Basis)), mul: factorAdvances)
+            advanceTaxing = intTaxRoundUp(valueDec: OperationsDec.multiply(Decimal(integerLiteral: Int(supersResult)), mul: factorAdvances))
         }
         else
         {
-            taxRate1Taxing = OperationsDec.multiply(Decimal(integerLiteral: Int(taxRate1Basis)), mul: factorAdvances)
+            advanceTaxing = intTaxRoundUp(valueDec: OperationsDec.multiply(Decimal(integerLiteral: Int(supersResult)), mul: factorAdvances))
         }
-        var taxRate2Taxing: Decimal = Decimal.zero
-        if (marginIncomeOfTaxRate2 != 0)
-        {
-            taxRate2Taxing = OperationsDec.multiply(Decimal(integerLiteral: Int(taxRate2Basis)), mul: factorTaxRate2)
-        }
-        return intTaxRoundUp(valueDec: taxRate1Taxing + taxRate2Taxing)
+
+        return advanceTaxing
     }
 }

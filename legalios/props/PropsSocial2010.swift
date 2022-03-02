@@ -4,7 +4,7 @@
 
 import Foundation
 
-class PropsSocial : PropsSocialBase {
+class PropsSocial2010 : PropsSocialBase {
     override init(version: VersionId,
          maxAnnualsBasis: Int32,
          factorEmployer: Decimal,
@@ -16,14 +16,14 @@ class PropsSocial : PropsSocialBase {
          marginIncomeAgr: Int32) {
 
         super.init(version: version,
-                maxAnnualsBasis: maxAnnualsBasis,
-                factorEmployer: factorEmployer,
-                factorEmployerHigher: factorEmployerHigher,
-                factorEmployee: factorEmployee,
-                factorEmployeeGarant: factorEmployeeGarant,
-                factorEmployeeReduce: factorEmployeeReduce,
-                marginIncomeEmp: marginIncomeEmp,
-                marginIncomeAgr: marginIncomeAgr)
+            maxAnnualsBasis: maxAnnualsBasis,
+            factorEmployer: factorEmployer,
+            factorEmployerHigher: factorEmployerHigher,
+            factorEmployee: factorEmployee,
+            factorEmployeeGarant: factorEmployeeGarant,
+            factorEmployeeReduce: factorEmployeeReduce,
+            marginIncomeEmp: marginIncomeEmp,
+            marginIncomeAgr: marginIncomeAgr)
     }
 
     convenience init(version: Int16) {
@@ -38,8 +38,8 @@ class PropsSocial : PropsSocialBase {
                 marginIncomeAgr: 0)
     }
 
-    static func empty() -> PropsSocial {
-        return PropsSocial(version: VERSION_ZERO)
+    static func empty() -> PropsSocial2010 {
+        return PropsSocial2010(version: VERSION_ZERO)
     }
 
     override func hasTermExemptionParticy(term: WorkSocialTerms) -> Bool {
@@ -49,16 +49,16 @@ class PropsSocial : PropsSocialBase {
         return (term == WorkSocialTerms.SocialTermSmallsEmpl)
     }
     override func hasIncomeBasedAgreementsParticy(term: WorkSocialTerms) -> Bool {
-        return (term == WorkSocialTerms.SocialTermAgreemTask)
+        return false
     }
     override func hasIncomeCumulatedParticy(term: WorkSocialTerms) -> Bool {
         var particy = false
         switch (term) {
         case WorkSocialTerms.SocialTermEmployments: particy = false
             break
-        case WorkSocialTerms.SocialTermAgreemTask: particy = true
+        case WorkSocialTerms.SocialTermAgreemTask: particy = false
             break
-        case WorkSocialTerms.SocialTermSmallsEmpl: particy = true
+        case WorkSocialTerms.SocialTermSmallsEmpl: particy = false
             break
         case WorkSocialTerms.SocialTermShortsMeet: particy = false
             break

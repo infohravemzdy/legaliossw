@@ -10,7 +10,7 @@ class ProviderTaxing2020: ProviderTaxing {
     }
 
     override func getProps<P>(_ period: IPeriod) -> P {
-        return PropsTaxing(version: version,
+        return PropsTaxing2018(version: version,
                 allowancePayer: allowancePayer(period),
                 allowanceDisab1st: allowanceDisab1st(period),
                 allowanceDisab2nd: allowanceDisab2nd(period),
