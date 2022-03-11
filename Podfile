@@ -1,7 +1,7 @@
 project 'legalios.xcodeproj'
 
 # Uncomment the next line to define a global platform for your project
-platform :macos, '12.1'
+platform :macos, '11.3'
 
 target 'legalios' do
   # Comment the next line if you don't want to use dynamic frameworks
